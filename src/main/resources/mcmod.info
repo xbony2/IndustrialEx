@@ -1,0 +1,15 @@
+[{
+  "modid" : “industrialEx”,
+  "name" : “IndustrialEx",
+  "version" : “1.0.0a",
+  "credits" : "xbony2",
+  "authors" : [
+      "xbony2" 
+     ],
+  "descripion" : “Cool stuff dude.”,
+  "url" : "",
+  "updateUrl" : "",
+  "logoFile" : "",
+  "parent" : "",
+  "screenshots" : []
+  }]   
