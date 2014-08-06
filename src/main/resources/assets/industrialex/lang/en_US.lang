@@ -3,5 +3,10 @@ itemGroup.IndustrialExTab=IndustrialEx
 item.darkSteelIngot.name=Dark Steel Ingot
 item.darkSteelNugget.name=Dark Steel Nugget
 item.steelNugget.name=Refined Iron Nugget
+item.darkSteelDensePlate.name=Dense Dark Steel Plate
+item.darkSteelItemCasing.name=Dark Steel Item Casing
+item.darkSteelPlate.name=Dark Steel Plate
+item.darkSteelKinRotor.name=Kinetic Wind Generator Rotor (Dark Steel)
+item.darkSteelRotorBlade.name=Dark Steel Rotor Blade
 
 tile.darkSteelBlock.name=Dark Steel Block

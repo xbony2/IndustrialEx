@@ -3,9 +3,11 @@ package xbony2.IndustrialEx;
 import ic2.api.item.IC2Items;
 import xbony2.IndustrialEx.blocks.IEBlock;
 import xbony2.IndustrialEx.items.IEItem;
+import xbony2.IndustrialEx.recipes.ShapedRecipes;
 import xbony2.IndustrialEx.recipes.ShapelessRecipes;
 import xbony2.IndustrialEx.registery.RegBlocks;
 import xbony2.IndustrialEx.registery.RegItems;
+import xbony2.IndustrialEx.registery.RegOreDictionary;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -47,10 +49,7 @@ public class IndustrialExpansion {
 		
 		RegBlocks.registerBlocks();
 		
-		OreDictionary.registerOre("ingotDarkSteel", RegItems.darkSteelIngot);
-		OreDictionary.registerOre("ingotDarkSteel", RegItems.darkSteelNugget);
-		OreDictionary.registerOre("ingotDarkSteel", RegItems.steelNugget);
-		OreDictionary.registerOre("blockDarkSteel", RegBlocks.darkSteelBlock);
+		RegOreDictionary.registerOreDictionaryStuff();
 	}
 	
 	@EventHandler
@@ -58,6 +57,8 @@ public class IndustrialExpansion {
 		FMLLog.info("Industrial Expansion is in init!");
 		
 		ShapelessRecipes.addRecipes();
+		
+		ShapedRecipes.addRecipes();
 		
 	}
 	
