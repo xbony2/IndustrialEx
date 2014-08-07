@@ -13,8 +13,6 @@ public class ShapelessRecipes {
 	 * Adds all the shapeless recipes
 	 */
 	public static void addRecipes(){
-		/*GameRegistry.addShapelessRecipe(new ItemStack(RegItems.darkSteelNugget, 9), new Object[]{
-			new ItemStack(RegItems.darkSteelIngot)});*/
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(RegItems.steelNugget, 9), new Object[]{
 			"ingotSteel"}));
