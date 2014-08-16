@@ -19,5 +19,8 @@ public class ShapelessRecipes {
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(RegItems.darkSteelNugget, 9), new Object[]{
 			"ingotDarkSteel"}));
+		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(RegItems.darkSteelIngot, 9), new Object[]{
+			"blockDarkSteel"}));
 	}
 }

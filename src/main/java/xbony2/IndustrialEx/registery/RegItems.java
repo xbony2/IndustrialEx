@@ -1,6 +1,7 @@
 package xbony2.IndustrialEx.registery;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import xbony2.IndustrialEx.items.DarkSteelKinRotor;
 import xbony2.IndustrialEx.items.IEItem;
 import net.minecraft.item.Item;
 
@@ -14,6 +15,7 @@ public class RegItems {
 	public static Item darkSteelDensePlate;
 	public static Item darkSteelRotorBlade;
 	public static Item darkSteelKinRotor;
+	public static Item darkSteelShaft;
 	
 	/**
 	 * Registers all of the items.
@@ -28,7 +30,8 @@ public class RegItems {
 		darkSteelPlate = new IEItem("darkSteelPlate");
 		darkSteelDensePlate = new IEItem("darkSteelDensePlate");
 		darkSteelRotorBlade = new IEItem("darkSteelRotorBlade");
-		darkSteelKinRotor = new IEItem("darkSteelKinRotor");
+		darkSteelKinRotor = new DarkSteelKinRotor();
+		darkSteelShaft = new IEItem("darkSteelShaft");
 		
 		GameRegistry.registerItem(darkSteelIngot, "darkSteelIngot");
 		GameRegistry.registerItem(darkSteelNugget, "darkSteelNugget");
@@ -38,5 +41,6 @@ public class RegItems {
 		GameRegistry.registerItem(darkSteelDensePlate, "darkSteelDensePlate");
 		GameRegistry.registerItem(darkSteelRotorBlade, "darkSteelRotorBlade");
 		GameRegistry.registerItem(darkSteelKinRotor, "darkSteelKinRotor");
+		GameRegistry.registerItem(darkSteelShaft, "darkSteelShaft");
 	}
 }

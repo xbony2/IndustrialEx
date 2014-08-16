@@ -3,6 +3,7 @@ package xbony2.IndustrialEx;
 import ic2.api.item.IC2Items;
 import xbony2.IndustrialEx.blocks.IEBlock;
 import xbony2.IndustrialEx.items.IEItem;
+import xbony2.IndustrialEx.recipes.MetalFormerRecipes;
 import xbony2.IndustrialEx.recipes.ShapedRecipes;
 import xbony2.IndustrialEx.recipes.ShapelessRecipes;
 import xbony2.IndustrialEx.registery.RegBlocks;
@@ -59,6 +60,8 @@ public class IndustrialExpansion {
 		ShapelessRecipes.addRecipes();
 		
 		ShapedRecipes.addRecipes();
+		
+		MetalFormerRecipes.addRecipes();
 		
 	}
 	
