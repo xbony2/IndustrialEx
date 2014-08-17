@@ -13,15 +13,15 @@ import baubles.api.IBauble;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class NanoRing extends Item implements IElectricItem, IBauble{
-	public NanoRing(String unlocalized, boolean charged){
+public class NanoAmulet extends Item implements IElectricItem, IBauble{
+	public NanoAmulet(String unlocalized, boolean charged){
 		super();
 		
 		this.setUnlocalizedName(unlocalized);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(maxEnergyStorage);
 		if(!charged){
-			this.setDamage(new ItemStack(Baubles.UnChargedNanoRing), 0);
+			this.setDamage(new ItemStack(Baubles.UnChargedNanoAmulet), 0);
 		}
 	}
 	
@@ -40,12 +40,12 @@ public class NanoRing extends Item implements IElectricItem, IBauble{
 
 	@Override
 	public Item getChargedItem(ItemStack itemStack) {
-		return Baubles.ChargedNanoRing;
+		return Baubles.ChargedNanoAmulet;
 	}
 
 	@Override
 	public Item getEmptyItem(ItemStack itemStack) {
-		return Baubles.UnChargedNanoRing;
+		return Baubles.UnChargedNanoAmulet;
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class NanoRing extends Item implements IElectricItem, IBauble{
 
 	@Override
 	public BaubleType getBaubleType(ItemStack itemstack) {
-		return BaubleType.RING;
+		return BaubleType.AMULET;
 	}
 
 	@Override
@@ -74,7 +74,7 @@ public class NanoRing extends Item implements IElectricItem, IBauble{
 		if(prevDamage <= 0){
 			;
 		}else{
-			player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 100, 0));
+			player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 100, 0));
 			this.setDamage(itemstack, (prevDamage - 10));
 		}
 	}
@@ -99,3 +99,4 @@ public class NanoRing extends Item implements IElectricItem, IBauble{
 		return true;
 	}
 }
+

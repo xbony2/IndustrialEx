@@ -11,5 +11,9 @@ item.darkSteelRotorBlade.name=Dark Steel Rotor Blade
 item.darkSteelShaft.name=Shaft (Dark Steel)
 item.nanoringc.name=NanoSuit Ring
 item.nanoringu.name=NanoSuit Ring
+item.nanobeltu.name=NanoSuit Belt
+item.nanobeltc.name=NanoSuit Belt
+item.nanoamuletu.name=NanoSuit Amulet
+item.nanoamuletc.name=NanoSuit Amulet
 
 tile.darkSteelBlock.name=Dark Steel Block
