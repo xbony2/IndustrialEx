@@ -2,6 +2,7 @@ package xbony2.IndustrialEx;
 
 import ic2.api.item.IC2Items;
 import xbony2.IndustrialEx.blocks.IEBlock;
+import xbony2.IndustrialEx.crossmod.CrossMod;
 import xbony2.IndustrialEx.items.IEItem;
 import xbony2.IndustrialEx.recipes.MetalFormerRecipes;
 import xbony2.IndustrialEx.recipes.ShapedRecipes;
@@ -36,7 +37,7 @@ public class IndustrialExpansion {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		FMLLog.info("Industrial Expansion is in preInit!");
+		FMLLog.info("IndustrialEx is in preInit!");
 		
 		IndustrialExTab = new CreativeTabs("IndustrialExTab"){
 			@Override 
@@ -51,11 +52,13 @@ public class IndustrialExpansion {
 		RegBlocks.registerBlocks();
 		
 		RegOreDictionary.registerOreDictionaryStuff();
+		
+		CrossMod.preinit();
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
-		FMLLog.info("Industrial Expansion is in init!");
+		FMLLog.info("IndustrialEx is in init!");
 		
 		ShapelessRecipes.addRecipes();
 		
@@ -63,10 +66,14 @@ public class IndustrialExpansion {
 		
 		MetalFormerRecipes.addRecipes();
 		
+		CrossMod.init();
+		
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event){
-		FMLLog.info("Industrial Expansion is in postInit!");
+		FMLLog.info("IndustrialEx is in postInit!");
+		
+		CrossMod.postInit();
 	}
 }
