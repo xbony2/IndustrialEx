@@ -6,9 +6,15 @@ import cpw.mods.fml.common.Loader;
 public class CrossMod {
 
 	public static boolean baubles;
+	public static boolean natura;
 	
 	public static void preinit(){
 		if(Loader.isModLoaded("Baubles")){
+			baubles = true;
+		}else{
+			baubles = false;
+		}
+		if(Loader.isModLoaded("Natura")){
 			baubles = true;
 		}else{
 			baubles = false;

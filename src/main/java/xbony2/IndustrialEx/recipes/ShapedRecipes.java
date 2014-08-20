@@ -37,5 +37,20 @@ public class ShapedRecipes {
 			"pip",
 			"pip",
 			"pip", 'p', "plateDarkSteel", 'i', "ingotDarkSteel"}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegItems.darkSteelIngot), new Object[]{
+			"nnn",
+			"nnn",
+			"nnn", 'n', "nuggetDarkSteel"}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(IC2Items.getItem("advIronIngot").getItem(), 1, 3), new Object[]{
+			"nnn",
+			"nnn",
+			"nnn", 'n', "nuggetSteel"}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegItems.darkMixedMetalIngot), new Object[]{
+			"nnn",
+			"sos",
+			"nnn", 'n', "nuggetSteel", 's', "ingotSilver", 'o', "plateObsidian"}));
 	}
 }

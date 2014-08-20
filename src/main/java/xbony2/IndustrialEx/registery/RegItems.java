@@ -16,6 +16,7 @@ public class RegItems {
 	public static Item darkSteelRotorBlade;
 	public static Item darkSteelKinRotor;
 	public static Item darkSteelShaft;
+	public static Item darkMixedMetalIngot;
 	
 	/**
 	 * Registers all of the items.
@@ -32,6 +33,7 @@ public class RegItems {
 		darkSteelRotorBlade = new IEItem("darkSteelRotorBlade");
 		darkSteelKinRotor = new DarkSteelKinRotor();
 		darkSteelShaft = new IEItem("darkSteelShaft");
+		darkMixedMetalIngot = new IEItem("darkMixedMetalIngot");
 		
 		GameRegistry.registerItem(darkSteelIngot, "darkSteelIngot");
 		GameRegistry.registerItem(darkSteelNugget, "darkSteelNugget");
@@ -42,5 +44,6 @@ public class RegItems {
 		GameRegistry.registerItem(darkSteelRotorBlade, "darkSteelRotorBlade");
 		GameRegistry.registerItem(darkSteelKinRotor, "darkSteelKinRotor");
 		GameRegistry.registerItem(darkSteelShaft, "darkSteelShaft");
+		GameRegistry.registerItem(darkMixedMetalIngot, "darkMixedMetalIngot");
 	}
 }

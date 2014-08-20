@@ -4,7 +4,7 @@ import ic2.api.item.IC2Items;
 import xbony2.IndustrialEx.blocks.IEBlock;
 import xbony2.IndustrialEx.crossmod.CrossMod;
 import xbony2.IndustrialEx.items.IEItem;
-import xbony2.IndustrialEx.recipes.MetalFormerRecipes;
+import xbony2.IndustrialEx.recipes.Ic2Recipes;
 import xbony2.IndustrialEx.recipes.ShapedRecipes;
 import xbony2.IndustrialEx.recipes.ShapelessRecipes;
 import xbony2.IndustrialEx.registery.RegBlocks;
@@ -27,7 +27,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "industrialEx", name = "IndustrialEx", version = "1.0.0a", dependencies = "required-after:IC2") 
+@Mod(modid = "industrialEx", name = "IndustrialEx", version = "1.0.0a", acceptedMinecraftVersions = "[1.7.10]", dependencies = "required-after:IC2") 
 public class IndustrialExpansion {
 
 	@Instance("industrialEx")
@@ -64,7 +64,7 @@ public class IndustrialExpansion {
 		
 		ShapedRecipes.addRecipes();
 		
-		MetalFormerRecipes.addRecipes();
+		Ic2Recipes.addRecipes();
 		
 		CrossMod.init();
 		

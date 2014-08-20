@@ -1,4 +1,4 @@
-package xbony2.IndustrialEx.recipes.metalformer;
+package xbony2.IndustrialEx.recipes.ic2recipes;
 
 import ic2.api.recipe.IRecipeInput;
 
@@ -9,11 +9,11 @@ import net.minecraft.item.ItemStack;
 import xbony2.IndustrialEx.registery.RegBlocks;
 import xbony2.IndustrialEx.registery.RegItems;
 
-public class DSPlateInput1 implements IRecipeInput{
+public class MMIngotInput1 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(RegItems.darkSteelPlate).getItem() == subject.getItem()){
+		if(new ItemStack(RegItems.darkMixedMetalIngot).getItem() == subject.getItem()){
 			return true;
 		}
 		return false;
@@ -26,8 +26,9 @@ public class DSPlateInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(RegItems.darkSteelPlate));
+		List<ItemStack> daList = Arrays.asList(new ItemStack(RegItems.darkMixedMetalIngot));
 		return daList;
 	}
 
 }
+
