@@ -1,6 +1,7 @@
 package xbony2.IndustrialEx.crossmod;
 
 import xbony2.IndustrialEx.crossmod.bauble.Baubles;
+import xbony2.IndustrialEx.crossmod.natura.Natura;
 import cpw.mods.fml.common.Loader;
 
 public class CrossMod {
@@ -24,6 +25,9 @@ public class CrossMod {
 	public static void init(){
 		if(baubles){
 			Baubles.init();
+		}
+		if(natura){
+			Natura.init();
 		}
 	}
 	

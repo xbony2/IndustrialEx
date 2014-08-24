@@ -2,6 +2,8 @@ package xbony2.IndustrialEx;
 
 import ic2.api.item.IC2Items;
 import xbony2.IndustrialEx.blocks.IEBlock;
+import xbony2.IndustrialEx.crops.CC0;
+import xbony2.IndustrialEx.crops.IECrops;
 import xbony2.IndustrialEx.crossmod.CrossMod;
 import xbony2.IndustrialEx.items.IEItem;
 import xbony2.IndustrialEx.recipes.Ic2Recipes;
@@ -59,6 +61,8 @@ public class IndustrialExpansion {
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 		FMLLog.info("IndustrialEx is in init!");
+		
+		new CC0().run();
 		
 		ShapelessRecipes.addRecipes();
 		
