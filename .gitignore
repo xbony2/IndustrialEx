@@ -13,3 +13,8 @@ hs_err_pid*
 
 #mac
 .DS_Store
+
+#Other mods
+src/main/java/mantle/
+src/main/java/mods/
+src/main/resources/assets/natura
