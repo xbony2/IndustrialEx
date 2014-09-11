@@ -1,7 +1,11 @@
 package xbony2.IndustrialEx.crossmod.bauble.items;
 
+import java.util.List;
+
+import ic2.api.item.ElectricItem;
 import ic2.api.item.IElectricItem;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -19,9 +23,9 @@ public class NanoBelt extends Item implements IElectricItem, IBauble{
 		
 		this.setUnlocalizedName(unlocalized);
 		this.setMaxStackSize(1);
-		this.setMaxDamage(maxEnergyStorage);
+		this.setMaxDamage(maxEnergyStorage + 1);
 		if(!charged){
-			this.setDamage(new ItemStack(Baubles.UnChargedNanoBelt), 0);
+			this.setDamage(new ItemStack(Baubles.UnChargedNanoBelt), 1);
 		}
 	}
 	
@@ -70,13 +74,11 @@ public class NanoBelt extends Item implements IElectricItem, IBauble{
 
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		int prevDamage = this.getDamage(itemstack);
-		if(prevDamage <= 0){
-			;
-		}else{
+		if(ElectricItem.manager.canUse(itemstack, 10)){
 			player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 100, 0));
-			this.setDamage(itemstack, (prevDamage - 10));
+			ElectricItem.manager.discharge(itemstack, 10, 3, false, false, false);
 		}
+		
 	}
 
 	@Override
@@ -97,5 +99,15 @@ public class NanoBelt extends Item implements IElectricItem, IBauble{
 	@Override
 	public boolean canUnequip(ItemStack itemstack, EntityLivingBase player) {
 		return true;
+	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void getSubItems(Item item, CreativeTabs tab, List itemList){
+		ItemStack itemstack = new ItemStack(this, 1);
+		ElectricItem.manager.charge(itemstack, 0x7fffffff, 0x7fffffff, true, false);
+		itemList.add(itemstack);
+		itemList.add(new ItemStack(this, 1, getMaxDamage()));
 	}
 }

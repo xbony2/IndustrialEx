@@ -12,9 +12,19 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ShapedRecipes {
 
 	public static void addRecipes(){
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoRing), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoRing, 1), new Object[]{
 			" c ",
 			"cec",
 			" c ", 'c', IC2Items.getItem("carbonPlate"), 'e', IC2Items.getItem("energyCrystal")}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoAmulet, 1), new Object[]{
+			"c c",
+			" i ",
+			" e ", 'c', IC2Items.getItem("carbonPlate"), 'e', IC2Items.getItem("energyCrystal"), 'i', "ingotIron"}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoBelt, 1), new Object[]{
+			"c c",
+			" e ",
+			"c c", 'c', IC2Items.getItem("carbonPlate"), 'e', IC2Items.getItem("energyCrystal")}));
 	}
 }
