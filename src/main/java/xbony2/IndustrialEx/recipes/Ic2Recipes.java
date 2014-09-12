@@ -14,7 +14,7 @@ import ic2.api.recipe.Recipes;
 public class Ic2Recipes{
 
 	/**
-	 * Adds all the metal former recipes.
+	 * Adds all the IC2 machine recipes.
 	 */
 	public static void addRecipes(){
 		DSBlockInput1 input1 = new DSBlockInput1();
