@@ -1,10 +1,12 @@
 package xbony2.IndustrialEx.recipes;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import xbony2.IndustrialEx.recipes.ic2recipes.DSBlockInput1;
 import xbony2.IndustrialEx.recipes.ic2recipes.DSIngotInput1;
 import xbony2.IndustrialEx.recipes.ic2recipes.DSPlateInput1;
 import xbony2.IndustrialEx.recipes.ic2recipes.DSPlateInput2;
+import xbony2.IndustrialEx.recipes.ic2recipes.LPInput1;
 import xbony2.IndustrialEx.recipes.ic2recipes.MMIngotInput1;
 import xbony2.IndustrialEx.registery.RegBlocks;
 import xbony2.IndustrialEx.registery.RegItems;
@@ -28,6 +30,8 @@ public class Ic2Recipes{
 		Recipes.compressor.addRecipe(input4, null, new ItemStack(RegItems.darkSteelDensePlate));
 		MMIngotInput1 input5 = new MMIngotInput1();
 		Recipes.compressor.addRecipe(input5, null, new ItemStack(RegItems.darkSteelIngot));
+		LPInput1 input6 = new LPInput1();
+		Recipes.extractor.addRecipe(input6, null, new ItemStack(RegItems.greenDye));
 	}
 	
 }

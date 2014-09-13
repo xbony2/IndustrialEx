@@ -1,8 +1,8 @@
 package xbony2.IndustrialEx.crossmod.natura;
 
-import net.minecraft.item.ItemStack;
 import ic2.api.item.IC2Items;
 import ic2.api.recipe.Recipes;
+import net.minecraft.item.ItemStack;
 import xbony2.IndustrialEx.crossmod.natura.ic2recipes.BerryInput1;
 import xbony2.IndustrialEx.crossmod.natura.ic2recipes.TinCanInput1;
 

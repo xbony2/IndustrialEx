@@ -1,23 +1,19 @@
-package xbony2.IndustrialEx.crossmod.natura.ic2recipes;
+package xbony2.IndustrialEx.crossmod.frail;
 
 import ic2.api.recipe.IRecipeInput;
 
 import java.util.Arrays;
 import java.util.List;
 
-import mods.natura.common.NContent;
 import net.minecraft.item.ItemStack;
 
-/**
- * Raspberry
- * @author xbony2
- *
- */
-public class BerryInput1 implements IRecipeInput{
+import com.ewyboy.floatingrails.Content.Technical.BlocksAndItems;
+
+public class LavaLilyPadInput1 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(NContent.berryItem).getItem() == subject.getItem()){
+		if(new ItemStack(BlocksAndItems.LavaLily).getItem() == subject.getItem()){
 			return true;
 		}
 		return false;
@@ -30,7 +26,7 @@ public class BerryInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(NContent.berryItem));
+		List<ItemStack> daList = Arrays.asList(new ItemStack(BlocksAndItems.LavaLily));
 		return daList;
 	}
 

@@ -16,5 +16,7 @@ item.nanobeltc.name=NanoSuit Belt
 item.nanoamuletu.name=NanoSuit Amulet
 item.nanoamuletc.name=NanoSuit Amulet
 item.darkMixedMetalIngot.name=Mixed Dark Metal Ingot
+item.dyeGreen.name=Green Dye
+item.dyeOrange.name=Orange Dye
 
 tile.darkSteelBlock.name=Dark Steel Block

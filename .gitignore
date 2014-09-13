@@ -17,4 +17,6 @@ hs_err_pid*
 #Other mods
 src/main/java/mantle/
 src/main/java/mods/
+src/main/java/com/
 src/main/resources/assets/natura
+src/main/resources/assets/floatingrails

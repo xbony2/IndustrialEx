@@ -1,12 +1,12 @@
 package xbony2.IndustrialEx.crossmod.bauble;
 
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
 import xbony2.IndustrialEx.IndustrialExpansion;
 import xbony2.IndustrialEx.crossmod.bauble.items.NanoAmulet;
 import xbony2.IndustrialEx.crossmod.bauble.items.NanoBelt;
 import xbony2.IndustrialEx.crossmod.bauble.items.NanoRing;
 import xbony2.IndustrialEx.crossmod.bauble.recipes.ShapedRecipes;
-import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class Baubles {
 

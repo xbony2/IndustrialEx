@@ -1,12 +1,12 @@
 package xbony2.IndustrialEx.crossmod.natura.ic2recipes;
 
+import ic2.api.item.IC2Items;
+import ic2.api.recipe.IRecipeInput;
+
 import java.util.Arrays;
 import java.util.List;
 
-import mods.natura.common.NContent;
 import net.minecraft.item.ItemStack;
-import ic2.api.item.IC2Items;
-import ic2.api.recipe.IRecipeInput;
 
 public class TinCanInput1 implements IRecipeInput{
 

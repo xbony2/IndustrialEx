@@ -28,10 +28,10 @@ public class ShapedRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegBlocks.darkSteelBlock), new Object[]{
 			block, 'x', "ingotDarkSteel"}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegItems.darkSteelKinRotor), new Object[]{
+		/*GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegItems.darkSteelKinRotor), new Object[]{
 				" b ",
 				"bsb",
-				" b ", 's', IC2Items.getItem("steelshaft"), 'b', RegItems.darkSteelRotorBlade}));
+				" b ", 's', IC2Items.getItem("steelshaft"), 'b', RegItems.darkSteelRotorBlade}));*/
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegItems.darkSteelRotorBlade), new Object[]{
 			"pip",
