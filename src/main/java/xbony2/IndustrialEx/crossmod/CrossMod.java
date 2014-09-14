@@ -42,6 +42,8 @@ public class CrossMod {
 	}
 	
 	public static void postInit(){
-		
+		if(natura){
+			Natura.postInit();
+		}
 	}
 }

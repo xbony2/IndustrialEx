@@ -13,7 +13,8 @@ public class Ic2Recipes {
 	 */
 	public static void addRecipes(){
 		TinCanInput1 tincan = new TinCanInput1();
+		
 		BerryInput1 input1 = new BerryInput1();
-		Recipes.cannerBottle.addRecipe(tincan, input1, new ItemStack(IC2Items.getItem("filledTinCan").getItem(), 1));
+		Recipes.cannerBottle.addRecipe(tincan, input1, new ItemStack(IC2Items.getItem("filledTinCan").getItem()));
 	}
 }

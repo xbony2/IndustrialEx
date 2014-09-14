@@ -13,7 +13,7 @@ public class LavaLilyPadInput1 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(BlocksAndItems.LavaLily).getItem() == subject.getItem()){
+		if(new ItemStack(BlocksAndItems.LavaLilySpawner).getItem() == subject.getItem()){
 			return true;
 		}
 		return false;
@@ -26,7 +26,7 @@ public class LavaLilyPadInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(BlocksAndItems.LavaLily));
+		List<ItemStack> daList = Arrays.asList(new ItemStack(BlocksAndItems.LavaLilySpawner));
 		return daList;
 	}
 
