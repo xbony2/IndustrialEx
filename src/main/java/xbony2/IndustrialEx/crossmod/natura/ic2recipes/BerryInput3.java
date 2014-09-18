@@ -1,18 +1,23 @@
 package xbony2.IndustrialEx.crossmod.natura.ic2recipes;
 
-import ic2.api.item.IC2Items;
 import ic2.api.recipe.IRecipeInput;
 
 import java.util.Arrays;
 import java.util.List;
 
+import mods.natura.common.NContent;
 import net.minecraft.item.ItemStack;
 
-public class TinCanInput1 implements IRecipeInput{
+/**
+ * Blackberry
+ * @author xbony2
+ *
+ */
+public class BerryInput3 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(IC2Items.getItem("tinCan") == subject){
+		if(new ItemStack(NContent.berryItem, 1, 2) == new ItemStack(subject.getItem(), 1, 2)){
 			return true;
 		}
 		return false;
@@ -25,7 +30,7 @@ public class TinCanInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(IC2Items.getItem("tinCan"));
+		List<ItemStack> daList = Arrays.asList(new ItemStack(NContent.berryItem, 1, 2));
 		return daList;
 	}
 

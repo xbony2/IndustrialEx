@@ -5,6 +5,7 @@ import ic2.api.recipe.IRecipeInput;
 import java.util.Arrays;
 import java.util.List;
 
+import xbony2.IndustrialEx.api.BonyDebugger;
 import mods.natura.common.NContent;
 import net.minecraft.item.ItemStack;
 
@@ -17,7 +18,7 @@ public class BerryInput1 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(NContent.berryItem).getItem() == subject.getItem()){
+		if(new ItemStack(NContent.berryItem) == subject){
 			return true;
 		}
 		return false;

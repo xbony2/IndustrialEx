@@ -18,9 +18,9 @@ public class CrossMod {
 			baubles = false;
 		}
 		if(Loader.isModLoaded("Natura")){
-			baubles = true;
+			natura = true;
 		}else{
-			baubles = false;
+			natura = false;
 		}
 		if(Loader.isModLoaded("floatingrails")){
 			frails = true;
