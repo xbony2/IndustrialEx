@@ -7,14 +7,14 @@ import cpw.mods.fml.common.Loader;
 
 public class CrossMod {
 
-	public static boolean baubles = false;
-	public static boolean natura = false;
-	public static boolean frails = false;
+	public static boolean baubles;
+	public static boolean natura;
+	public static boolean frails;
 	
 	public static void preinit(){
-		if(Loader.isModLoaded("Baubles")) baubles = true;
-		if(Loader.isModLoaded("Natura")) natura = true;
-		if(Loader.isModLoaded("floatingrails")) frails = true;
+		baubles = Loader.isModLoaded("Baubles");
+		natura = Loader.isModLoaded("Natura");
+		frails = Loader.isModLoaded("floatingrails");
 		
 	}
 	
