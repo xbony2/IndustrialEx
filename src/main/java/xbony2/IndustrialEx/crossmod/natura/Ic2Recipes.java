@@ -14,9 +14,9 @@ public class Ic2Recipes {
 		TinCanInput1 tincan = new TinCanInput1();
 		BerryInput1 input1 = new BerryInput1();
 		Recipes.cannerBottle.addRecipe(tincan, input1, IC2Items.getItem("filledTinCan"));
-		/*BerryInput2 input2 = new BerryInput2();
+		BerryInput2 input2 = new BerryInput2();
 		Recipes.cannerBottle.addRecipe(tincan, input2, IC2Items.getItem("filledTinCan"));
-		BerryInput3 input3 = new BerryInput3();
+		/*BerryInput3 input3 = new BerryInput3();
 		Recipes.cannerBottle.addRecipe(tincan, input3, IC2Items.getItem("filledTinCan"));
 		BerryInput4 input4 = new BerryInput4();
 		Recipes.cannerBottle.addRecipe(tincan, input4, IC2Items.getItem("filledTinCan"));*/

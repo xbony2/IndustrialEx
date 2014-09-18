@@ -12,7 +12,7 @@ public class TinCanInput1 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(IC2Items.getItem("tinCan") == subject){
+		if(IC2Items.getItem("tinCan").getItem() == subject.getItem()){
 			return true;
 		}
 		return false;

@@ -17,7 +17,7 @@ public class BerryInput2 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(NContent.berryItem, 1, 1) == subject){
+		if(new ItemStack(NContent.berryItem).getItem() == subject.getItem() && subject.getItemDamage() == 1){
 			return true;
 		}
 		return false;
