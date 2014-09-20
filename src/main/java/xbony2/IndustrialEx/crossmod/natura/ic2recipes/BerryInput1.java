@@ -31,8 +31,8 @@ public class BerryInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(NContent.berryItem));
-		return daList;
+		List<ItemStack> list = Arrays.asList(new ItemStack(NContent.berryItem));
+		return list;
 	}
 
 }

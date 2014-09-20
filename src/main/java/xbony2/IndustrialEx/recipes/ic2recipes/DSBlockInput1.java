@@ -25,8 +25,8 @@ public class DSBlockInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(RegBlocks.darkSteelBlock));
-		return daList;
+		List<ItemStack> list = Arrays.asList(new ItemStack(RegBlocks.darkSteelBlock));
+		return list;
 	}
 
 }

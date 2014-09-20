@@ -17,7 +17,7 @@ public class BerryInput3 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(NContent.berryItem, 1, 2) == new ItemStack(subject.getItem(), 1, 2)){
+		if(new ItemStack(NContent.berryItem).getItem() == subject.getItem() && subject.getItemDamage() == 2){
 			return true;
 		}
 		return false;
@@ -30,8 +30,8 @@ public class BerryInput3 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(NContent.berryItem, 1, 2));
-		return daList;
+		List<ItemStack> list = Arrays.asList(new ItemStack(NContent.berryItem, 1, 2));
+		return list;
 	}
 
 }

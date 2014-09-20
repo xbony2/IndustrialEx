@@ -25,8 +25,8 @@ public class TinCanInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(IC2Items.getItem("tinCan"));
-		return daList;
+		List<ItemStack> list = Arrays.asList(IC2Items.getItem("tinCan"));
+		return list;
 	}
 
 }

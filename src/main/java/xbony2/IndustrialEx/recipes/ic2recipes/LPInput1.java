@@ -27,8 +27,8 @@ public class LPInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(Blocks.waterlily));
-		return daList;
+		List<ItemStack> list = Arrays.asList(new ItemStack(Blocks.waterlily));
+		return list;
 	}
 
 }

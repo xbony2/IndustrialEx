@@ -26,8 +26,8 @@ public class DSIngotInput1 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(RegItems.darkSteelIngot));
-		return daList;
+		List<ItemStack> list = Arrays.asList(new ItemStack(RegItems.darkSteelIngot));
+		return list;
 	}
 
 }

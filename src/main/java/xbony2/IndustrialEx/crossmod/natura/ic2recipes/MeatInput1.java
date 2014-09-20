@@ -5,19 +5,20 @@ import ic2.api.recipe.IRecipeInput;
 import java.util.Arrays;
 import java.util.List;
 
+import xbony2.IndustrialEx.api.BonyDebugger;
 import mods.natura.common.NContent;
 import net.minecraft.item.ItemStack;
 
 /**
- * Blueberry
+ * Raw Imphide
  * @author xbony2
  *
  */
-public class BerryInput2 implements IRecipeInput{
+public class MeatInput1 implements IRecipeInput{
 
 	@Override
 	public boolean matches(ItemStack subject) {
-		if(new ItemStack(NContent.berryItem).getItem() == subject.getItem() && subject.getItemDamage() == 1){
+		if(new ItemStack(NContent.impMeat).getItem() == subject.getItem() && subject.getItemDamage() == 0){
 			return true;
 		}
 		return false;
@@ -30,7 +31,7 @@ public class BerryInput2 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> list = Arrays.asList(new ItemStack(NContent.berryItem, 1, 1));
+		List<ItemStack> list = Arrays.asList(new ItemStack(NContent.impMeat));
 		return list;
 	}
 

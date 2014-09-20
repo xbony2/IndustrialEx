@@ -26,8 +26,8 @@ public class DSPlateInput2 implements IRecipeInput{
 
 	@Override
 	public List<ItemStack> getInputs() {
-		List<ItemStack> daList = Arrays.asList(new ItemStack(RegItems.darkSteelPlate));
-		return daList;
+		List<ItemStack> list = Arrays.asList(new ItemStack(RegItems.darkSteelPlate));
+		return list;
 	}
 
 }
