@@ -22,7 +22,7 @@ group= "com.xbony2.industrialEx” // http://maven.apache.org/guides/mini/guide-
 archivesBaseName = “industrialEx”
 
 minecraft {
-    version = "1.7.10-10.13.0.1206”
+    version = "1.7.10-10.13.0.1208”
     assetDir = "eclipse/assets"
 }
 
