@@ -18,5 +18,14 @@ item.nanoamuletc.name=NanoSuit Amulet
 item.darkMixedMetalIngot.name=Mixed Dark Metal Ingot
 item.dyeGreen.name=Green Dye
 item.dyeOrange.name=Orange Dye
+item.crushedFerrousOre.name=Crushed Ferrous Ore
+item.tinyPileManaDust.name=Tiny Pile of Mana Dust
+item.crushedManaOre.name=Crushed Mana Ore
+item.crushedShinyOre.name=Crushed Shiny Ore
+item.purifiedCrushedManaOre.name=Purified Crushed Mana Ore
+item.purifiedCrushedShinyOre.name=Purified Crushed Shiny Ore
+item.tinyPileShinyDust.name=Tiny Pile of Shiny Dust
+item.tinyPileFerrousDust.name=Tiny Pile of Ferrous Dust
+item.purifiedCrushedFerrousOre.name=Purified Crushed Ferrous Ore
 
 tile.darkSteelBlock.name=Dark Steel Block
