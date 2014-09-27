@@ -2,6 +2,7 @@ package xbony2.IndustrialEx.registery;
 
 import java.io.File;
 
+import cpw.mods.fml.common.FMLLog;
 import net.minecraftforge.common.config.Configuration;
 
 public class IEConfig {
@@ -28,6 +29,12 @@ public class IEConfig {
 				ferrousDusts = config.getBoolean("[TE]Ferrous IC2 Dusts", "Crossmod", true, "Enables/disables allowance of ferrous ore being used in macerators/thermal centifudge/ore washing plant");
 				shinyDusts = config.getBoolean("[TE]Shiny IC2 Dusts", "Crossmod", true, "Enables/disables allowance of shiny ore being used in macerators/thermal centifudge/ore washing plant");
 				manaDusts = config.getBoolean("[TE]Infused Mana IC2 Dusts", "Crossmod", true, "Enables/disables allowance of infused mana ore being used in macerators/thermal centifudge/ore washing plant");
+			}
+			
+			boolean doesHephHaveBadBreath = config.getBoolean("Does Heph have bad breath", "General", true, "Turns on and off Heph's bad breath.");
+			if(!doesHephHaveBadBreath){ 
+				FMLLog.info("[IndustrialEx] Hah! Nice try!"); 
+				doesHephHaveBadBreath = true;
 			}
 		}
 		config.save();

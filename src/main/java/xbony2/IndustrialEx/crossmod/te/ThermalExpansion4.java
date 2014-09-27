@@ -28,9 +28,9 @@ public class ThermalExpansion4 {
 			GameRegistry.registerItem(purifiedCrushedFerrousOre, "purifiedCrushedFerrousOre");
 			GameRegistry.registerItem(tinyPileFerrousDust, "tinyPileFerrousDust");
 			
-			OreDictionary.registerOre("crushedFerrous", crushedFerrousOre);
-			OreDictionary.registerOre("crushedPurifiedFerrous", purifiedCrushedFerrousOre);
-			OreDictionary.registerOre("dustTinyFerrous", tinyPileFerrousDust);
+			OreDictionary.registerOre("crushedNickel", crushedFerrousOre);
+			OreDictionary.registerOre("crushedPurifiedNickel", purifiedCrushedFerrousOre);
+			OreDictionary.registerOre("dustTinyNickel", tinyPileFerrousDust);
 		}
 		
 		if(IEConfig.shinyDusts){
@@ -42,9 +42,9 @@ public class ThermalExpansion4 {
 			GameRegistry.registerItem(purifiedCrushedShinyOre, "purifiedCrushedShinyOre");
 			GameRegistry.registerItem(tinyPileShinyDust, "tinyPileShinyDust");
 			
-			OreDictionary.registerOre("crushedShiny", crushedShinyOre);
-			OreDictionary.registerOre("crushedPurifiedShiny", purifiedCrushedShinyOre);
-			OreDictionary.registerOre("dustTinyShiny", tinyPileShinyDust);
+			OreDictionary.registerOre("crushedPlatinum", crushedShinyOre);
+			OreDictionary.registerOre("crushedPurifiedPlatinum", purifiedCrushedShinyOre);
+			OreDictionary.registerOre("dustTinyPlatinum", tinyPileShinyDust);
 		}
 		
 		if(IEConfig.manaDusts){
@@ -56,9 +56,10 @@ public class ThermalExpansion4 {
 			GameRegistry.registerItem(purifiedCrushedManaOre, "purifiedCrushedManaOre");
 			GameRegistry.registerItem(tinyPileManaDust, "tinyPileManaDust");
 			
-			OreDictionary.registerOre("crushedMana", crushedManaOre);
-			OreDictionary.registerOre("crushedPurifiedMana", purifiedCrushedManaOre);
-			OreDictionary.registerOre("dustTinyMana", tinyPileManaDust);
+			OreDictionary.registerOre("crushedMithril", crushedManaOre);
+			OreDictionary.registerOre("crushedPurifiedMithril", purifiedCrushedManaOre);
+			OreDictionary.registerOre("dustTinyMithril", tinyPileManaDust);
 		}
+		Ic2Recipes.addRecipes();
 	}
 }
