@@ -10,7 +10,7 @@ public class Ic2Recipes {
 	/**
 	 * Adds all the IC2 machine recipes for natura crossmod stuff.
 	 */
-	public static void addRecipes(){
+	protected static void addRecipes(){
 		TinCanInput1 tincan = new TinCanInput1();
 		BerryInput1 input1 = new BerryInput1();
 		Recipes.cannerBottle.addRecipe(tincan, input1, IC2Items.getItem("filledTinCan"));

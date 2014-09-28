@@ -1,6 +1,8 @@
 package xbony2.IndustrialEx.crossmod.te;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import xbony2.IndustrialEx.crossmod.te.recipes.CraftingRecipes;
+import xbony2.IndustrialEx.crossmod.te.recipes.FurnaceRecipes;
 import xbony2.IndustrialEx.items.IEItem;
 import xbony2.IndustrialEx.registery.IEConfig;
 import net.minecraft.item.Item;
@@ -61,5 +63,7 @@ public class ThermalExpansion4 {
 			OreDictionary.registerOre("dustTinyMithril", tinyPileManaDust);
 		}
 		Ic2Recipes.addRecipes();
+		CraftingRecipes.addRecipes();
+		FurnaceRecipes.addRecipes();
 	}
 }

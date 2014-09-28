@@ -20,3 +20,6 @@ src/main/java/mods/
 src/main/java/com/
 src/main/resources/assets/natura
 src/main/resources/assets/floatingrails
+
+#gradle
+!gradle/wrapper/gradle-wrapper.jar
