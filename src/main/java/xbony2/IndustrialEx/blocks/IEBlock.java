@@ -14,6 +14,9 @@ public class IEBlock extends Block{
 		
 		this.setBlockName(unlocalizedName);
 		this.setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		this.setStepSound(soundTypePiston);
+		this.setHardness(3.0F);
+		this.setResistance(10.0F);
 	}
 
 	@Override
