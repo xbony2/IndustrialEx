@@ -1,7 +1,6 @@
 package xbony2.IndustrialEx.crossmod.bauble.items;
 
 import ic2.api.item.ElectricItem;
-import ic2.api.item.IElectricItem;
 
 import java.util.List;
 
@@ -12,19 +11,20 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import xbony2.IndustrialEx.api.electric.IElectricItemBony;
 import xbony2.IndustrialEx.crossmod.bauble.Baubles;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class NanoAmulet extends Item implements IElectricItem, IBauble{
+public class NanoAmulet extends Item implements IElectricItemBony, IBauble{
 	public NanoAmulet(String unlocalized, boolean charged){
 		super();
 		
 		this.setUnlocalizedName(unlocalized);
 		this.setMaxStackSize(1);
-		this.setMaxDamage(maxEnergyStorage + 1);
+		this.setMaxDamage(this.MAX_ENERGY_NANO + 1);
 		if(!charged){
 			this.setDamage(new ItemStack(Baubles.UnChargedNanoAmulet), 1);
 		}
@@ -36,8 +36,6 @@ public class NanoAmulet extends Item implements IElectricItem, IBauble{
 		this.itemIcon = par1IconRegister.registerIcon("industrialEx:" + this.getUnlocalizedName());
 	}
 	
-	private final int maxEnergyStorage = 1000000;
-
 	@Override
 	public boolean canProvideEnergy(ItemStack itemStack){
 		return false;
@@ -55,7 +53,7 @@ public class NanoAmulet extends Item implements IElectricItem, IBauble{
 
 	@Override
 	public double getMaxCharge(ItemStack itemStack) {
-		return maxEnergyStorage;
+		return this.MAX_ENERGY_NANO;
 	}
 
 	@Override
@@ -78,19 +76,14 @@ public class NanoAmulet extends Item implements IElectricItem, IBauble{
 		if(ElectricItem.manager.canUse(itemstack, 10)){
 			player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 100, 0));
 			ElectricItem.manager.discharge(itemstack, 10, 3, false, false, false);
-		}
-		
+		}	
 	}
 
 	@Override
-	public void onEquipped(ItemStack itemstack, EntityLivingBase player) {
-		
-	}
+	public void onEquipped(ItemStack itemstack, EntityLivingBase player) {}
 
 	@Override
-	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
-		
-	}
+	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {}
 
 	@Override
 	public boolean canEquip(ItemStack itemstack, EntityLivingBase player) {
@@ -107,7 +100,7 @@ public class NanoAmulet extends Item implements IElectricItem, IBauble{
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(Item item, CreativeTabs tab, List itemList){
 		ItemStack itemstack = new ItemStack(this, 1);
-		ElectricItem.manager.charge(itemstack, 0x7fffffff, 0x7fffffff, true, false);
+		ElectricItem.manager.charge(itemstack, Integer.MAX_VALUE, Integer.MAX_VALUE, true, false);
 		itemList.add(itemstack);
 		itemList.add(new ItemStack(this, 1, getMaxDamage()));
 	}

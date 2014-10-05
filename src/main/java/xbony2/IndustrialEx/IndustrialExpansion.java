@@ -1,7 +1,6 @@
 package xbony2.IndustrialEx;
 
 import ic2.api.item.IC2Items;
-import xbony2.IndustrialEx.blocks.IEBlock;
 import xbony2.IndustrialEx.crossmod.CrossMod;
 import xbony2.IndustrialEx.items.IEItem;
 import xbony2.IndustrialEx.recipes.Ic2Recipes;
@@ -11,6 +10,7 @@ import xbony2.IndustrialEx.registery.IEConfig;
 import xbony2.IndustrialEx.registery.RegBlocks;
 import xbony2.IndustrialEx.registery.RegItems;
 import xbony2.IndustrialEx.registery.RegOreDictionary;
+import xbony2.IndustrialEx.world.IEWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -62,6 +62,8 @@ public class IndustrialExpansion {
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 		FMLLog.info("IndustrialEx is in init!");
+		
+		GameRegistry.registerWorldGenerator(new IEWorldGenerator(), 1);
 		
 		ShapelessRecipes.addRecipes();
 		

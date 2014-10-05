@@ -6,24 +6,24 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.world.IBlockAccess;
 
-public class IEOreBlock extends IEBlock{
+public class IEOreBlock extends IEBaseBlock{
 
 	private Item gem;
 	private int gemMeta;
 	
-	public IEOreBlock(Material material, String unlocalizedName) {
-		super(material, unlocalizedName);
+	public IEOreBlock(String unlocalizedName) {
+		super(Material.rock, unlocalizedName);
 		this.setResistance(5.0F);
 	}
 	
-	public IEOreBlock(Material material, String unlocalizedName, Item gem) {
-		super(material, unlocalizedName);
+	public IEOreBlock(String unlocalizedName, Item gem) {
+		super(Material.rock, unlocalizedName);
 		this.setResistance(5.0F);
 		this.gem = gem;
 	}
 	
-	public IEOreBlock(Material material, String unlocalizedName, Item gem, int gemMeta) {
-		super(material, unlocalizedName);
+	public IEOreBlock(String unlocalizedName, Item gem, int gemMeta) {
+		super(Material.rock, unlocalizedName);
 		this.setResistance(5.0F);
 		this.gem = gem;
 		this.gemMeta = gemMeta;

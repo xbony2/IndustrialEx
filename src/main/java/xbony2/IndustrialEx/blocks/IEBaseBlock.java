@@ -7,9 +7,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
-public class IEBlock extends Block{
+public class IEBaseBlock extends Block{
 
-	public IEBlock(Material material, String unlocalizedName) {
+	public IEBaseBlock(Material material, String unlocalizedName) {
 		super(material);
 		
 		this.setBlockName(unlocalizedName);

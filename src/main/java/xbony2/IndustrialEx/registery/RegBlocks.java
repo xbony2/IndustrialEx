@@ -1,6 +1,7 @@
 package xbony2.IndustrialEx.registery;
 
-import xbony2.IndustrialEx.blocks.IEBlock;
+import xbony2.IndustrialEx.blocks.IEBaseBlock;
+import xbony2.IndustrialEx.blocks.IEOreBlock;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -8,6 +9,7 @@ import net.minecraft.block.material.Material;
 public class RegBlocks {
 
 	public static Block darkSteelBlock;
+	public static Block nytOre;
 	
 	/**
 	 * Registers blocks
@@ -15,8 +17,10 @@ public class RegBlocks {
 	 * @author xbony2
 	 */
 	public static void registerBlocks(){
-		darkSteelBlock = new IEBlock(Material.iron, "darkSteelBlock");
+		darkSteelBlock = new IEBaseBlock(Material.iron, "darkSteelBlock");
+		nytOre = new IEOreBlock("oreNyt", RegItems.nytGem);
 		
 		GameRegistry.registerBlock(darkSteelBlock, "darkSteelBlock");
+		GameRegistry.registerBlock(nytOre, "oreNyt");
 	}
 }
