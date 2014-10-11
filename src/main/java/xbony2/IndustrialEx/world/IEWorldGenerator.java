@@ -30,7 +30,9 @@ public class IEWorldGenerator implements IWorldGenerator{
     }
 	
 	private void generateNether(World world, Random random, int x, int z){
-		this.addOreSpawn(RegBlocks.nytOre, world, random, x, z, 16, 16, 16, 4, 5, 120);
+		this.addNetherOreSpawn(RegBlocks.nytOre, world, random, x, z, 16, 16, 16, 4, 5, 120);
+		this.addNetherOreSpawn(RegBlocks.viceOre, world, random, x, z, 16, 16, 5, 7, 5, 120);
+		this.addNetherOreSpawn(RegBlocks.infusedGoldOre, world, random, x, z, 16, 16, 11, 1, 5, 120);
     }
 
 	private void generateEnd(World world, Random random, int x, int z){

@@ -10,6 +10,8 @@ public class RegBlocks {
 
 	public static Block darkSteelBlock;
 	public static Block nytOre;
+	public static Block viceOre;
+	public static Block infusedGoldOre;
 	
 	/**
 	 * Registers blocks
@@ -19,8 +21,12 @@ public class RegBlocks {
 	public static void registerBlocks(){
 		darkSteelBlock = new IEBaseBlock(Material.iron, "darkSteelBlock");
 		nytOre = new IEOreBlock("oreNyt", RegItems.nytGem);
+		viceOre = new IEOreBlock("oreVice", RegItems.viceGem);
+		infusedGoldOre = new IEOreBlock("oreInfusedGold");
 		
 		GameRegistry.registerBlock(darkSteelBlock, "darkSteelBlock");
 		GameRegistry.registerBlock(nytOre, "oreNyt");
+		GameRegistry.registerBlock(viceOre, "oreVice");
+		GameRegistry.registerBlock(infusedGoldOre, "oreInfusedGold");
 	}
 }

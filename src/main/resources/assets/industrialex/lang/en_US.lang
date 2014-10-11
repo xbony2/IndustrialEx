@@ -27,5 +27,11 @@ item.purifiedCrushedShinyOre.name=Purified Crushed Shiny Ore
 item.tinyPileShinyDust.name=Tiny Pile of Shiny Dust
 item.tinyPileFerrousDust.name=Tiny Pile of Ferrous Dust
 item.purifiedCrushedFerrousOre.name=Purified Crushed Ferrous Ore
+item.gemNyt.name=Nyt
+item.gemVice.name=Vice
+item.ingotInfusedGold.name=Infused Gold Ingot
 
 tile.darkSteelBlock.name=Dark Steel Block
+tile.oreNyt.name=Nyt Ore
+tile.oreVice.name=Vice Ore
+tile.oreInfusedGold.name=Infused Gold Ore

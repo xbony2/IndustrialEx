@@ -6,6 +6,7 @@ import xbony2.IndustrialEx.items.IEItem;
 import xbony2.IndustrialEx.recipes.Ic2Recipes;
 import xbony2.IndustrialEx.recipes.ShapedRecipes;
 import xbony2.IndustrialEx.recipes.ShapelessRecipes;
+import xbony2.IndustrialEx.recipes.SmeltingRecipes;
 import xbony2.IndustrialEx.registery.IEConfig;
 import xbony2.IndustrialEx.registery.RegBlocks;
 import xbony2.IndustrialEx.registery.RegItems;
@@ -68,6 +69,8 @@ public class IndustrialExpansion {
 		ShapelessRecipes.addRecipes();
 		
 		ShapedRecipes.addRecipes();
+		
+		SmeltingRecipes.addRecipes();
 		
 		Ic2Recipes.addRecipes();
 		

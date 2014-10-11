@@ -19,6 +19,20 @@ public class RegItems {
 	public static Item darkMixedMetalIngot;
 	public static Item greenDye;
 	public static Item nytGem;
+	public static Item nytNugget;
+	public static Item nytItemCasing;
+	public static Item nytPlate;
+	public static Item nytDensePlate;
+	public static Item viceGem;
+	public static Item viceNugget;
+	public static Item viceItemCasing;
+	public static Item vicePlate;
+	public static Item viceDensePlate;
+	public static Item infusedGoldIngot;
+	public static Item infusedGoldNugget;
+	public static Item infusedGoldItemCasing;
+	public static Item infusedGoldPlate;
+	public static Item infusedGoldDensePlate;
 	
 	/**
 	 * Registers all of the items.
@@ -38,6 +52,20 @@ public class RegItems {
 		darkMixedMetalIngot = new IEItem("darkMixedMetalIngot");
 		greenDye = new IEItem("dyeGreen");
 		nytGem = new IEItem("gemNyt");
+		nytNugget = new IEItem("nuggetNyt");
+		nytItemCasing = new IEItem("itemCasingNyt");
+		nytPlate = new IEItem("plateNyt");
+		nytDensePlate = new IEItem("densePlateNyt");
+		viceGem = new IEItem("gemVice");
+		viceNugget = new IEItem("nuggetVice");
+		viceItemCasing = new IEItem("itemCasingVice");
+		vicePlate = new IEItem("plateVice");
+		viceDensePlate = new IEItem("densePlateVice");
+		infusedGoldIngot = new IEItem("ingotInfusedGold");
+		infusedGoldNugget = new IEItem("nuggetInfusedGold");
+		infusedGoldItemCasing = new IEItem("itemCasingInfusedGold");
+		infusedGoldPlate = new IEItem("plateInfusedGold");
+		infusedGoldDensePlate = new IEItem("densePlateInfusedGold");
 		
 		GameRegistry.registerItem(darkSteelIngot, "darkSteelIngot");
 		GameRegistry.registerItem(darkSteelNugget, "darkSteelNugget");
@@ -51,5 +79,7 @@ public class RegItems {
 		GameRegistry.registerItem(darkMixedMetalIngot, "darkMixedMetalIngot");
 		GameRegistry.registerItem(greenDye, "dyeGreen");
 		GameRegistry.registerItem(nytGem, "gemNyt");
+		GameRegistry.registerItem(viceGem, "gemVice");
+		GameRegistry.registerItem(infusedGoldIngot, "ingotInfusedGold");
 	}
 }

@@ -17,5 +17,11 @@ public class RegOreDictionary {
 		OreDictionary.registerOre("plateDarkSteel", RegItems.darkSteelPlate);
 		OreDictionary.registerOre("plateDenseDarkSteel", RegItems.darkSteelDensePlate);
 		OreDictionary.registerOre("dyeGreen", RegItems.greenDye);
+		OreDictionary.registerOre("oreNyt", RegBlocks.nytOre);
+		OreDictionary.registerOre("gemNyt", RegItems.nytGem);
+		OreDictionary.registerOre("oreVice", RegBlocks.viceOre);
+		OreDictionary.registerOre("gemVice", RegItems.viceGem);
+		OreDictionary.registerOre("oreInfusedGold", RegBlocks.infusedGoldOre);
+		OreDictionary.registerOre("ingotInfusedGold", RegItems.infusedGoldIngot);
 	}
 }
