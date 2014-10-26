@@ -14,9 +14,6 @@ public class FRail {
 	
 	public static void init(){
 		dyeOrange = new IEItem("dyeOrange");
-		GameRegistry.registerItem(dyeOrange, "dyeOrange");
-		
-		OreDictionary.registerOre("dyeOrange", dyeOrange);
 		
 		LavaLilyPadInput1 input1 = new LavaLilyPadInput1();
 		Recipes.extractor.addRecipe(input1, null, new ItemStack(dyeOrange));

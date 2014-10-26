@@ -7,7 +7,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class RegBlocks {
-
 	public static Block darkSteelBlock;
 	public static Block nytOre;
 	public static Block viceOre;
@@ -19,14 +18,9 @@ public class RegBlocks {
 	 * @author xbony2
 	 */
 	public static void registerBlocks(){
-		darkSteelBlock = new IEBaseBlock(Material.iron, "darkSteelBlock");
+		darkSteelBlock = new IEBaseBlock(Material.iron, "blockDarkSteel");
 		nytOre = new IEOreBlock("oreNyt", RegItems.nytGem);
 		viceOre = new IEOreBlock("oreVice", RegItems.viceGem);
 		infusedGoldOre = new IEOreBlock("oreInfusedGold");
-		
-		GameRegistry.registerBlock(darkSteelBlock, "darkSteelBlock");
-		GameRegistry.registerBlock(nytOre, "oreNyt");
-		GameRegistry.registerBlock(viceOre, "oreVice");
-		GameRegistry.registerBlock(infusedGoldOre, "oreInfusedGold");
 	}
 }

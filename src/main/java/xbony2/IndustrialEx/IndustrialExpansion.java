@@ -10,7 +10,6 @@ import xbony2.IndustrialEx.recipes.SmeltingRecipes;
 import xbony2.IndustrialEx.registery.IEConfig;
 import xbony2.IndustrialEx.registery.RegBlocks;
 import xbony2.IndustrialEx.registery.RegItems;
-import xbony2.IndustrialEx.registery.RegOreDictionary;
 import xbony2.IndustrialEx.world.IEWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -54,8 +53,6 @@ public class IndustrialExpansion {
 		RegItems.registerItems();
 		
 		RegBlocks.registerBlocks();
-		
-		RegOreDictionary.registerOreDictionaryStuff();
 		
 		CrossMod.preinit();
 	}

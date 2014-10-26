@@ -33,6 +33,15 @@ public class RegItems {
 	public static Item infusedGoldItemCasing;
 	public static Item infusedGoldPlate;
 	public static Item infusedGoldDensePlate;
+	public static Item nytCrushedOre;
+	public static Item nytPurifiedCrushedOre;
+	public static Item nytTinyPile;
+	public static Item viceCrushedOre;
+	public static Item vicePurifiedCrushedOre;
+	public static Item viceTinyPile;
+	public static Item infusedGoldCrushedOre;
+	public static Item infusedGoldPurifiedCrushedOre;
+	public static Item infusedGoldTinyPile;
 	
 	/**
 	 * Registers all of the items.
@@ -40,46 +49,42 @@ public class RegItems {
 	 * @author xbony2
 	 */
 	public static void registerItems(){
-		darkSteelIngot = new IEItem("darkSteelIngot");
-		darkSteelNugget = new IEItem("darkSteelNugget");
-		steelNugget = new IEItem("steelNugget");
-		darkSteelItemCasing = new IEItem("darkSteelItemCasing");
-		darkSteelPlate = new IEItem("darkSteelPlate");
-		darkSteelDensePlate = new IEItem("darkSteelDensePlate");
-		darkSteelRotorBlade = new IEItem("darkSteelRotorBlade");
+		darkSteelIngot = new IEItem("ingotDarkSteel");
+		darkSteelNugget = new IEItem("nuggetDarkSteel");
+		steelNugget = new IEItem("nuggetSteel");
+		darkSteelItemCasing = new IEItem("itemCasingDarkSteel");
+		darkSteelPlate = new IEItem("plateDarkSteel");
+		darkSteelDensePlate = new IEItem("plateDenseDarkSteel");
+		darkSteelRotorBlade = new IEItem("rotorBladeDarkSteel");
 		//darkSteelKinRotor = new DarkSteelKinRotor();
-		darkSteelShaft = new IEItem("darkSteelShaft");
-		darkMixedMetalIngot = new IEItem("darkMixedMetalIngot");
+		darkSteelShaft = new IEItem("shaftDarkSteel");
+		darkMixedMetalIngot = new IEItem("XBONY2_mixedMetalIngotDarkSteel");
 		greenDye = new IEItem("dyeGreen");
 		nytGem = new IEItem("gemNyt");
 		nytNugget = new IEItem("nuggetNyt");
 		nytItemCasing = new IEItem("itemCasingNyt");
 		nytPlate = new IEItem("plateNyt");
-		nytDensePlate = new IEItem("densePlateNyt");
+		nytDensePlate = new IEItem("plateDenseNyt");
 		viceGem = new IEItem("gemVice");
 		viceNugget = new IEItem("nuggetVice");
 		viceItemCasing = new IEItem("itemCasingVice");
 		vicePlate = new IEItem("plateVice");
-		viceDensePlate = new IEItem("densePlateVice");
+		viceDensePlate = new IEItem("plateDenseVice");
 		infusedGoldIngot = new IEItem("ingotInfusedGold");
 		infusedGoldNugget = new IEItem("nuggetInfusedGold");
 		infusedGoldItemCasing = new IEItem("itemCasingInfusedGold");
 		infusedGoldPlate = new IEItem("plateInfusedGold");
-		infusedGoldDensePlate = new IEItem("densePlateInfusedGold");
+		infusedGoldDensePlate = new IEItem("plateDenseInfusedGold");
+		nytCrushedOre = new IEItem("crushedNyt");
+		nytPurifiedCrushedOre = new IEItem("crushedPurifiedNyt");
+		nytTinyPile = new IEItem("dustTinyNyt");
+		viceCrushedOre = new IEItem("crushedVice");
+		vicePurifiedCrushedOre = new IEItem("crushedPurifiedVice");
+		viceTinyPile = new IEItem("dustTinyVice");
+		infusedGoldCrushedOre = new IEItem("crushedInfusedGold");
+		infusedGoldPurifiedCrushedOre = new IEItem("crushedPurifiedInfusedGold");
+		infusedGoldTinyPile = new IEItem("dustTinyInfusedGold");
 		
-		GameRegistry.registerItem(darkSteelIngot, "darkSteelIngot");
-		GameRegistry.registerItem(darkSteelNugget, "darkSteelNugget");
-		GameRegistry.registerItem(steelNugget, "steelNugget");
-		GameRegistry.registerItem(darkSteelItemCasing, "darkSteelItemCasing");
-		GameRegistry.registerItem(darkSteelPlate, "darkSteelPlate");
-		GameRegistry.registerItem(darkSteelDensePlate, "darkSteelDensePlate");
-		GameRegistry.registerItem(darkSteelRotorBlade, "darkSteelRotorBlade");
 		//GameRegistry.registerItem(darkSteelKinRotor, "darkSteelKinRotor");
-		GameRegistry.registerItem(darkSteelShaft, "darkSteelShaft");
-		GameRegistry.registerItem(darkMixedMetalIngot, "darkMixedMetalIngot");
-		GameRegistry.registerItem(greenDye, "dyeGreen");
-		GameRegistry.registerItem(nytGem, "gemNyt");
-		GameRegistry.registerItem(viceGem, "gemVice");
-		GameRegistry.registerItem(infusedGoldIngot, "ingotInfusedGold");
 	}
 }

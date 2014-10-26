@@ -25,42 +25,18 @@ public class ThermalExpansion4 {
 			crushedFerrousOre = new IEItem("crushedFerrousOre");
 			purifiedCrushedFerrousOre = new IEItem("purifiedCrushedFerrousOre");
 			tinyPileFerrousDust = new IEItem("tinyPileFerrousDust");
-			
-			GameRegistry.registerItem(crushedFerrousOre, "crushedFerrousOre");
-			GameRegistry.registerItem(purifiedCrushedFerrousOre, "purifiedCrushedFerrousOre");
-			GameRegistry.registerItem(tinyPileFerrousDust, "tinyPileFerrousDust");
-			
-			OreDictionary.registerOre("crushedNickel", crushedFerrousOre);
-			OreDictionary.registerOre("crushedPurifiedNickel", purifiedCrushedFerrousOre);
-			OreDictionary.registerOre("dustTinyNickel", tinyPileFerrousDust);
 		}
 		
 		if(IEConfig.shinyDusts){
 			crushedShinyOre = new IEItem("crushedShinyOre");
 			purifiedCrushedShinyOre = new IEItem("purifiedCrushedShinyOre");
 			tinyPileShinyDust = new IEItem("tinyPileShinyDust");
-			
-			GameRegistry.registerItem(crushedShinyOre, "crushedShinyOre");
-			GameRegistry.registerItem(purifiedCrushedShinyOre, "purifiedCrushedShinyOre");
-			GameRegistry.registerItem(tinyPileShinyDust, "tinyPileShinyDust");
-			
-			OreDictionary.registerOre("crushedPlatinum", crushedShinyOre);
-			OreDictionary.registerOre("crushedPurifiedPlatinum", purifiedCrushedShinyOre);
-			OreDictionary.registerOre("dustTinyPlatinum", tinyPileShinyDust);
 		}
 		
 		if(IEConfig.manaDusts){
 			crushedManaOre = new IEItem("crushedManaOre");
 			purifiedCrushedManaOre = new IEItem("purifiedCrushedManaOre");
 			tinyPileManaDust = new IEItem("tinyPileManaDust");
-			
-			GameRegistry.registerItem(crushedManaOre, "crushedManaOre");
-			GameRegistry.registerItem(purifiedCrushedManaOre, "purifiedCrushedManaOre");
-			GameRegistry.registerItem(tinyPileManaDust, "tinyPileManaDust");
-			
-			OreDictionary.registerOre("crushedMithril", crushedManaOre);
-			OreDictionary.registerOre("crushedPurifiedMithril", purifiedCrushedManaOre);
-			OreDictionary.registerOre("dustTinyMithril", tinyPileManaDust);
 		}
 		Ic2Recipes.addRecipes();
 		CraftingRecipes.addRecipes();
