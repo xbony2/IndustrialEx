@@ -5,7 +5,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import ic2.api.item.IC2Items;
 import ic2.api.recipe.Recipes;
-import thermalexpansion.item.TEItems;
 import thermalfoundation.item.TFItems;
 import xbony2.IndustrialEx.crossmod.te.ic2recipes.*;
 import xbony2.IndustrialEx.registery.IEConfig;
