@@ -1,4 +1,4 @@
-package xbony2.IndustrialEx.crossmod.te.recipes;
+package xbony2.IndustrialEx.crossmod.tf.recipes;
 
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import thermalfoundation.item.TFItems;
