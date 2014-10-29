@@ -42,7 +42,7 @@ public class Ic2Recipes {
 					TFItems.dustPlatinum,
 					IC2Items.getItem("stoneDust")});
 			IC2RecipeInput input10 = new IC2RecipeInput(TFItems.ingotPlatinum);
-			Recipes.macerator.addRecipe(input10, null, TFItems.ingotPlatinum);
+			Recipes.macerator.addRecipe(input10, null, TFItems.dustPlatinum);
 		}
 		
 		if(IEConfig.ferrousDusts){
@@ -62,7 +62,7 @@ public class Ic2Recipes {
 					TFItems.dustNickel,
 					IC2Items.getItem("stoneDust")});
 			IC2RecipeInput input11 = new IC2RecipeInput(TFItems.ingotNickel);
-			Recipes.macerator.addRecipe(input11, null, TFItems.ingotNickel);
+			Recipes.macerator.addRecipe(input11, null, TFItems.dustNickel);
 		}
 		
 		if(IEConfig.manaDusts){
@@ -82,7 +82,7 @@ public class Ic2Recipes {
 					TFItems.dustMithril,
 					IC2Items.getItem("stoneDust")});
 			IC2RecipeInput input12 = new IC2RecipeInput(TFItems.ingotMithril);
-			Recipes.macerator.addRecipe(input12, null, TFItems.ingotMithril);
+			Recipes.macerator.addRecipe(input12, null, TFItems.dustMithril);
 		}
 	}
 }

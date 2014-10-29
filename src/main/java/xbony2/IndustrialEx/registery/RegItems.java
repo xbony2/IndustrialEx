@@ -36,12 +36,15 @@ public class RegItems {
 	public static Item nytCrushedOre;
 	public static Item nytPurifiedCrushedOre;
 	public static Item nytTinyPile;
+	public static Item nytDust;
 	public static Item viceCrushedOre;
 	public static Item vicePurifiedCrushedOre;
 	public static Item viceTinyPile;
+	public static Item viceDust;
 	public static Item infusedGoldCrushedOre;
 	public static Item infusedGoldPurifiedCrushedOre;
 	public static Item infusedGoldTinyPile;
+	public static Item infusedGoldDust;
 	
 	/**
 	 * Registers all of the items.
@@ -84,6 +87,9 @@ public class RegItems {
 		infusedGoldCrushedOre = new IEItem("crushedInfusedGold");
 		infusedGoldPurifiedCrushedOre = new IEItem("crushedPurifiedInfusedGold");
 		infusedGoldTinyPile = new IEItem("dustTinyInfusedGold");
+		nytDust = new IEItem("dustNyt");
+		viceDust = new IEItem("dustVice");
+		infusedGoldDust = new IEItem("dustInfusedGold");
 		
 		//GameRegistry.registerItem(darkSteelKinRotor, "darkSteelKinRotor");
 	}
