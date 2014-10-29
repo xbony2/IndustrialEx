@@ -23,7 +23,7 @@ public class ThermalFoundation {
 	public static void init(){
 		if(IEConfig.ferrousDusts){
 			crushedFerrousOre = new IEItem("crushedFerrous");
-			purifiedCrushedFerrousOre = new IEItem("crushedPurifiedFerrousOre");
+			purifiedCrushedFerrousOre = new IEItem("crushedPurifiedFerrous");
 			tinyPileFerrousDust = new IEItem("dustTinyFerrous");
 		}
 		

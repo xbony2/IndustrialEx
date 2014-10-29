@@ -5,6 +5,7 @@ import ic2.api.recipe.Recipes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class LazyOreAdd {
@@ -54,6 +55,8 @@ public class LazyOreAdd {
 				block, 'x', tinyDust}));
 		GameRegistry.addRecipe(new ShapedOreRecipe((gemOrIngot), new Object[]{
 				block, 'x', nugget}));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(nugget.getItem(), 9, nugget.getItemDamage()), new Object[]{
+			gemOrIngot}));
 		GameRegistry.addRecipe(new ShapedOreRecipe((compactblock), new Object[]{
 				block, 'x', gemOrIngot}));
 		GameRegistry.addSmelting(pureDust, gemOrIngot, 1.0F);

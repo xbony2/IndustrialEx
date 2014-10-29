@@ -11,6 +11,9 @@ public class RegBlocks {
 	public static Block nytOre;
 	public static Block viceOre;
 	public static Block infusedGoldOre;
+	public static Block nytBlock;
+	public static Block viceBlock;
+	public static Block infusedGoldBlock;
 	
 	/**
 	 * Registers blocks
@@ -22,5 +25,8 @@ public class RegBlocks {
 		nytOre = new IEOreBlock("oreNyt", RegItems.nytGem);
 		viceOre = new IEOreBlock("oreVice", RegItems.viceGem);
 		infusedGoldOre = new IEOreBlock("oreInfusedGold");
+		nytBlock = new IEBaseBlock(Material.iron, "blockNyt");
+		viceBlock = new IEBaseBlock(Material.iron, "blockVice");
+		infusedGoldBlock = new IEBaseBlock(Material.iron, "blockInfusedGold");
 	}
 }
