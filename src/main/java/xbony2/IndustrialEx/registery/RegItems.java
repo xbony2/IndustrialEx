@@ -45,6 +45,7 @@ public class RegItems {
 	public static Item infusedGoldPurifiedCrushedOre;
 	public static Item infusedGoldTinyPile;
 	public static Item infusedGoldDust;
+	public static Item weed;
 	
 	/**
 	 * Registers all of the items.
@@ -90,6 +91,7 @@ public class RegItems {
 		nytDust = new IEItem("dustNyt");
 		viceDust = new IEItem("dustVice");
 		infusedGoldDust = new IEItem("dustInfusedGold");
+		weed = new IEItem("XBONY2_weed");
 		
 		//GameRegistry.registerItem(darkSteelKinRotor, "darkSteelKinRotor");
 	}

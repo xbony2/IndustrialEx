@@ -42,6 +42,7 @@ item.plateVice.name=Vice Plate
 item.itemCasingVice.name=Vice Item Casing
 item.plateDenseInfusedGold.name=Infused Gold Dense Plate
 item.plateDenseNyt.name=Nyt Dense Plate
+item.XBONY2_weed.name=Marijuana
 
 tile.blockDarkSteel.name=Dark Steel Block
 tile.oreNyt.name=Nyt Ore
