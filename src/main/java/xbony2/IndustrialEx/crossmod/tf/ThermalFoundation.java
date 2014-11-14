@@ -35,7 +35,7 @@ public class ThermalFoundation {
 		
 		if(IEConfig.manaDusts){
 			crushedManaOre = new IEItem("crushedMana");
-			purifiedCrushedManaOre = new IEItem("crushedPurifiedManaOre");
+			purifiedCrushedManaOre = new IEItem("crushedPurifiedMana");
 			tinyPileManaDust = new IEItem("dustTinyMana");
 		}
 		Ic2Recipes.addRecipes();

@@ -1,6 +1,7 @@
 package xbony2.IndustrialEx;
 
 import ic2.api.item.IC2Items;
+import xbony2.IndustrialEx.api.util.IELog;
 import xbony2.IndustrialEx.crossmod.CrossMod;
 import xbony2.IndustrialEx.items.IEItem;
 import xbony2.IndustrialEx.recipes.Ic2Recipes;
@@ -38,7 +39,7 @@ public class IndustrialExpansion {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		FMLLog.info("IndustrialEx is in preInit!");
+		IELog.log("We are in preinit!");
 		
 		IEConfig.init(event.getSuggestedConfigurationFile());
 		
@@ -59,7 +60,7 @@ public class IndustrialExpansion {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
-		FMLLog.info("IndustrialEx is in init!");
+		IELog.log("We are in init!");
 		
 		GameRegistry.registerWorldGenerator(new IEWorldGenerator(), 1);
 		
@@ -77,7 +78,7 @@ public class IndustrialExpansion {
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event){
-		FMLLog.info("IndustrialEx is in postInit!");
+		IELog.log("We are in postinit!");
 		
 		CrossMod.postInit();
 	}
