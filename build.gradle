@@ -17,11 +17,11 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.0"
+version = newIEVersion
 group= "com.xbony2.industrialEx"
 archivesBaseName = "industrialEx"
 minecraft {
-    version = "1.7.10-10.13.0.1208"
+    version = forgeVersion
     assetDir = "eclipse/assets"
 }
 
@@ -34,14 +34,19 @@ repositories {
         name = "chickenbones" 
         url = "http://chickenbones.net/maven/" 
 	}
+	maven {
+		name "ProfMobius"
+		url "http://mobiusstrip.eu/maven"
+	}
 }
 
 dependencies {
-    compile 'net.industrial-craft:industrialcraft-2:2.2.607-experimental:dev'
-    compile "codechicken:CodeChickenCore:1.7.10-1.0.2.9:dev" 
-    compile "codechicken:NotEnoughItems:1.7.10-1.0.2.15:dev" 
-    compile "codechicken:CodeChickenLib:1.7.10-1.1.1.93:dev"
-	compile "com.mod-buildcraft:buildcraft:6.0.17:dev"
+    compile ic2Version
+    compile codeChickenCoreVersion 
+    compile notEnoughItemsVersion 
+    compile codeChickenLibVersion
+	compile buildcraftVersion
+	compile wailaVersion
 }
 
 
