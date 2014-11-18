@@ -1,12 +1,12 @@
 [{
-  "modid" : “industrialEx”,
-  "name" : “IndustrialEx",
-  "version" : “1.0.0a",
+  "modid" : "industrialEx",
+  "name" : "IndustrialEx",
+  "version" : "@VERSION@",
   "credits" : "xbony2",
   "authors" : [
       "xbony2" 
      ],
-  "descripion" : “Cool stuff dude.”,
+  "descripion" : "IndustrialEx: expanding the tech tree of IC2.",
   "url" : "",
   "updateUrl" : "",
   "logoFile" : "",

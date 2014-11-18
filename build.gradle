@@ -23,6 +23,7 @@ archivesBaseName = "industrialEx"
 minecraft {
     version = forgeVersion
     assetDir = "eclipse/assets"
+	replace "@VERSION@", project.version
 }
 
 repositories {

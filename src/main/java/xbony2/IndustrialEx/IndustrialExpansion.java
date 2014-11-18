@@ -29,7 +29,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "industrialEx", name = "IndustrialEx", version = "1.0.0a", acceptedMinecraftVersions = "[1.7.10]", dependencies = "required-after:IC2") 
+@Mod(modid = "industrialEx", name = "IndustrialEx", version = "@VERSION@", acceptedMinecraftVersions = "[1.7.10]", dependencies = "required-after:IC2") 
 public class IndustrialExpansion {
 
 	@Instance("industrialEx")
