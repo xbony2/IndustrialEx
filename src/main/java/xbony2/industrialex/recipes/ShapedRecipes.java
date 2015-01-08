@@ -8,7 +8,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ShapedRecipes {
-
+	//TODO: refactor
 	private static final String[] helmet = new String[]{"xxx", "x x"};
 	private static final String[] chestplate = new String[]{"x x", "xxx", "xxx"};
 	private static final String[] leggings = new String[]{"xxx", "x x", "x x"};

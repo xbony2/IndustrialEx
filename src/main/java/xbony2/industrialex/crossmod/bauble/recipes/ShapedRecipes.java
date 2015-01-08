@@ -11,18 +11,18 @@ public class ShapedRecipes {
 
 	public static void addRecipes(){
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoRing, 1), new Object[]{
-			" c ",
-			"c c",
-			" e ", 'c', IC2Items.getItem("carbonPlate"), 'e', IC2Items.getItem("energyCrystal")}));
+			" C ",
+			"C C",
+			" E ", 'C', IC2Items.getItem("carbonPlate"), 'E', IC2Items.getItem("energyCrystal")}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoBelt, 1), new Object[]{
-			" c ",
-			"cec",
-			" c ", 'c', IC2Items.getItem("carbonPlate"), 'e', IC2Items.getItem("energyCrystal")}));
+			" C ",
+			"CEC",
+			" C ", 'C', IC2Items.getItem("carbonPlate"), 'E', IC2Items.getItem("energyCrystal")}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoAmulet, 1), new Object[]{
-			" s ",
-			"s s",
-			"cec", 'c', IC2Items.getItem("carbonPlate"), 'e', IC2Items.getItem("energyCrystal"), 's', Items.string}));
+			" S ",
+			"S S",
+			"CEC", 'C', IC2Items.getItem("carbonPlate"), 'E', IC2Items.getItem("energyCrystal"), 's', Items.string}));
 	}
 }

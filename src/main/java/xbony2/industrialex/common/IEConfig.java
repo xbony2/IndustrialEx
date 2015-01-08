@@ -32,12 +32,6 @@ public class IEConfig {
 				shinyDusts = config.getBoolean("[TF]Shiny IC2 Dusts", "Crossmod", true, "Enables/disables allowance of shiny ore being used in macerators/thermal centifudge/ore washing plant");
 				manaDusts = config.getBoolean("[TF]Infused Mana IC2 Dusts", "Crossmod", true, "Enables/disables allowance of infused mana ore being used in macerators/thermal centifudge/ore washing plant");
 			}
-			
-			boolean doesHephHaveBadBreath = config.getBoolean("Does Heph have bad breath", "General", true, "Turns on and off Heph's bad breath.");
-			if(!doesHephHaveBadBreath){ 
-				FMLLog.info("[IndustrialEx] Hah! Nice try! (Sorry heph! :P)"); 
-				doesHephHaveBadBreath = true;
-			}
 		}
 		config.save();
 	}

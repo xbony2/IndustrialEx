@@ -9,7 +9,7 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class LazyOreAdd {
-	private static final String[] block = new String[]{"xxx", "xxx", "xxx"};
+	private static final String[] BLOCK = new String[]{"XXX", "XXX", "XXX"};
 	
 	public static void addOreRecipes(ItemStack ore, ItemStack compactblock, ItemStack gemOrIngot, ItemStack nugget, 
 			ItemStack itemCasing, ItemStack plate, ItemStack densePlate, ItemStack crushedOre, ItemStack purifiedCrushedOre, 
@@ -52,13 +52,13 @@ public class LazyOreAdd {
 		Recipes.compressor.addRecipe(input7, null, densePlate);
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe((pureDust), new Object[]{
-				block, 'x', tinyDust}));
+				BLOCK, 'X', tinyDust}));
 		GameRegistry.addRecipe(new ShapedOreRecipe((gemOrIngot), new Object[]{
-				block, 'x', nugget}));
+				BLOCK, 'X', nugget}));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(nugget.getItem(), 9, nugget.getItemDamage()), new Object[]{
 			gemOrIngot}));
 		GameRegistry.addRecipe(new ShapedOreRecipe((compactblock), new Object[]{
-				block, 'x', gemOrIngot}));
+				BLOCK, 'x', gemOrIngot}));
 		GameRegistry.addSmelting(pureDust, gemOrIngot, 1.0F);
 		GameRegistry.addSmelting(crushedOre, gemOrIngot, 1.0F);
 		GameRegistry.addSmelting(purifiedCrushedOre, gemOrIngot, 1.0F);
