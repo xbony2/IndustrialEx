@@ -2,7 +2,7 @@ package xbony2.industrialex.crossmod.bauble;
 
 import net.minecraft.item.Item;
 import xbony2.industrialex.crossmod.bauble.items.*;
-import xbony2.industrialex.crossmod.bauble.recipes.ShapedRecipes;
+import xbony2.industrialex.crossmod.bauble.recipes.BaubleShapedRecipes;
 import xbony2.industrialex.IndustrialExpansion;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -30,6 +30,6 @@ public class Baubles {
 		GameRegistry.registerItem(ChargedNanoAmulet, "ChargedNanoAmulet");
 		GameRegistry.registerItem(UnChargedNanoAmulet, "UnChargedNanoAmulet");
 		
-		ShapedRecipes.addRecipes();
+		BaubleShapedRecipes.addRecipes();
 	}
 }

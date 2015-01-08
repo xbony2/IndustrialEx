@@ -1,8 +1,8 @@
-package xbony2.industrialex.crossmod.tf.recipes;
+package xbony2.industrialex.crossmod.thermalfoundation.recipes;
 
 import thermalfoundation.item.TFItems;
 import xbony2.industrialex.common.IEConfig;
-import xbony2.industrialex.crossmod.tf.ThermalFoundation;
+import xbony2.industrialex.crossmod.thermalfoundation.ThermalFoundation;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class FurnaceRecipes {

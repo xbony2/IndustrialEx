@@ -2,19 +2,39 @@ package xbony2.industrialex.crossmod;
 
 import xbony2.industrialex.common.IEConfig;
 import xbony2.industrialex.crossmod.bauble.Baubles;
-import xbony2.industrialex.crossmod.frail.FRail;
+import xbony2.industrialex.crossmod.floatingrails.FRail;
 import xbony2.industrialex.crossmod.natura.Natura;
-import xbony2.industrialex.crossmod.te.ThermalExpansion4;
-import xbony2.industrialex.crossmod.tf.ThermalFoundation;
+import xbony2.industrialex.crossmod.thermalexpansion.ThermalExpansion4;
+import xbony2.industrialex.crossmod.thermalfoundation.ThermalFoundation;
 import cpw.mods.fml.common.Loader;
 
 public class CrossMod {
 
-	public static boolean baubles;
-	public static boolean natura;
-	public static boolean frails;
-	public static boolean te;
-	public static boolean tf;
+	private static boolean baubles;
+	private static boolean natura;
+	private static boolean frails;
+	private static boolean te;
+	private static boolean tf;
+	
+	public static boolean getBaubles(){
+		return baubles;
+	}
+	
+	public static boolean getNatura(){
+		return natura;
+	}
+	
+	public static boolean getFloatingRails(){
+		return frails;
+	}
+	
+	public static boolean getThermalExpansion(){
+		return te;
+	}
+	
+	public static boolean getThermalFoundation(){
+		return tf;
+	}
 	
 	public static void preinit(){
 		baubles = Loader.isModLoaded("Baubles") && IEConfig.baublesCrossmod;
@@ -33,6 +53,6 @@ public class CrossMod {
 	}
 	
 	public static void postInit(){
-		if(natura) Natura.postInit();
+		//stub
 	}
 }

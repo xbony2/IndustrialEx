@@ -1,8 +1,8 @@
-package xbony2.industrialex.crossmod.tf;
+package xbony2.industrialex.crossmod.thermalfoundation;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import xbony2.industrialex.common.IEConfig;
-import xbony2.industrialex.crossmod.tf.recipes.*;
+import xbony2.industrialex.crossmod.thermalfoundation.recipes.*;
 import xbony2.industrialex.items.IEItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
@@ -37,8 +37,8 @@ public class ThermalFoundation {
 			purifiedCrushedManaOre = new IEItem("crushedPurifiedMana");
 			tinyPileManaDust = new IEItem("dustTinyMana");
 		}
-		Ic2Recipes.addRecipes();
-		CraftingRecipes.addRecipes();
+		TFIC2Recipes.addRecipes();
+		TFShapedRecipes.addRecipes();
 		FurnaceRecipes.addRecipes();
 	}
 }

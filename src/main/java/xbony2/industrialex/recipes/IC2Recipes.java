@@ -9,7 +9,7 @@ import xbony2.industrialex.api.recipe.LazyOreAdd;
 import xbony2.industrialex.common.RegBlocks;
 import xbony2.industrialex.common.RegItems;
 
-public class Ic2Recipes{
+public class IC2Recipes{
 
 	/**
 	 * Adds all the IC2 machine recipes.

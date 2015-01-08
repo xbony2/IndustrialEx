@@ -1,4 +1,4 @@
-package xbony2.industrialex.crossmod.tf;
+package xbony2.industrialex.crossmod.thermalfoundation.recipes;
 
 import ic2.api.item.IC2Items;
 import ic2.api.recipe.Recipes;
@@ -9,12 +9,13 @@ import thermalfoundation.block.BlockOre;
 import thermalfoundation.item.TFItems;
 import xbony2.industrialex.api.recipe.IC2RecipeInput;
 import xbony2.industrialex.common.IEConfig;
+import xbony2.industrialex.crossmod.thermalfoundation.ThermalFoundation;
 
-public class Ic2Recipes {
+public class TFIC2Recipes {
 	/**
 	 * Adds all the recipes for TE crossmod stuff
 	 */
-	protected static void addRecipes(){
+	public static void addRecipes(){
 		NBTTagCompound orewash = new NBTTagCompound();
 	    orewash.setInteger("amount", 1000);
 	    NBTTagCompound centerf = new NBTTagCompound();

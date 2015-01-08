@@ -1,4 +1,4 @@
-package xbony2.industrialex.crossmod.frail;
+package xbony2.industrialex.crossmod.floatingrails;
 
 import ic2.api.recipe.Recipes;
 import net.minecraft.item.Item;

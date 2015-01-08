@@ -67,7 +67,7 @@ public class IndustrialExpansion {
 		
 		SmeltingRecipes.addRecipes();
 		
-		Ic2Recipes.addRecipes();
+		IC2Recipes.addRecipes();
 		
 		CrossMod.init();
 		

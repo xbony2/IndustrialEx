@@ -7,7 +7,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 import xbony2.industrialex.crossmod.bauble.Baubles;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-public class ShapedRecipes {
+public class BaubleShapedRecipes {
 
 	public static void addRecipes(){
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoRing, 1), new Object[]{

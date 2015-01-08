@@ -1,4 +1,4 @@
-package xbony2.industrialex.crossmod.natura;
+package xbony2.industrialex.crossmod.natura.recipes;
 
 import ic2.api.item.IC2Items;
 import ic2.api.recipe.Recipes;
@@ -6,13 +6,13 @@ import mods.natura.common.NContent;
 import net.minecraft.item.ItemStack;
 import xbony2.industrialex.api.recipe.IC2RecipeInput;
 
-public class Ic2Recipes {
+public class NaturaIC2Recipes {
 	private final static ItemStack FILLED = IC2Items.getItem("filledTinCan");
 	
 	/**
 	 * Adds all the IC2 machine recipes for natura crossmod stuff.
 	 */
-	protected static void addRecipes(){
+	public static void addRecipes(){
 		IC2RecipeInput tincan = new IC2RecipeInput(IC2Items.getItem("tinCan"));
 		
 		IC2RecipeInput input1 = new IC2RecipeInput(new ItemStack(NContent.berryItem));
