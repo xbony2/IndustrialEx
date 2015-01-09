@@ -39,6 +39,6 @@ public class ThermalFoundation {
 		}
 		TFIC2Recipes.addRecipes();
 		TFShapedRecipes.addRecipes();
-		FurnaceRecipes.addRecipes();
+		TFSmeltingRecipes.addRecipes();
 	}
 }

@@ -23,6 +23,6 @@ public class BaubleShapedRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.UnChargedNanoAmulet, 1), new Object[]{
 			" S ",
 			"S S",
-			"CEC", 'C', IC2Items.getItem("carbonPlate"), 'E', IC2Items.getItem("energyCrystal"), 's', Items.string}));
+			"CEC", 'C', IC2Items.getItem("carbonPlate"), 'E', IC2Items.getItem("energyCrystal"), 'S', Items.string}));
 	}
 }
