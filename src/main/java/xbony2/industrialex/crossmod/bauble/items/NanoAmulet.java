@@ -26,7 +26,7 @@ public class NanoAmulet extends Item implements IElectricItemBony, IBauble{
 		this.setMaxStackSize(1);
 		this.setMaxDamage(this.MAX_ENERGY_NANO + 1);
 		if(!charged){
-			this.setDamage(new ItemStack(Baubles.UnChargedNanoAmulet), 1);
+			this.setDamage(new ItemStack(Baubles.unChargedNanoAmulet), 1);
 		}
 	}
 	
@@ -43,12 +43,12 @@ public class NanoAmulet extends Item implements IElectricItemBony, IBauble{
 
 	@Override
 	public Item getChargedItem(ItemStack itemStack) {
-		return Baubles.ChargedNanoAmulet;
+		return Baubles.chargedNanoAmulet;
 	}
 
 	@Override
 	public Item getEmptyItem(ItemStack itemStack) {
-		return Baubles.UnChargedNanoAmulet;
+		return Baubles.unChargedNanoAmulet;
 	}
 
 	@Override

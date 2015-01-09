@@ -27,7 +27,7 @@ public class NanoRing extends Item implements IElectricItemBony, IBauble{
 		this.setMaxStackSize(1);
 		this.setMaxDamage(this.MAX_ENERGY_NANO + 1);
 		if(!charged){
-			this.setDamage(new ItemStack(Baubles.UnChargedNanoRing), 1);
+			this.setDamage(new ItemStack(Baubles.unChargedNanoRing), 1);
 		}
 	}
 	
@@ -44,12 +44,12 @@ public class NanoRing extends Item implements IElectricItemBony, IBauble{
 
 	@Override
 	public Item getChargedItem(ItemStack itemStack) {
-		return Baubles.ChargedNanoRing;
+		return Baubles.chargedNanoRing;
 	}
 
 	@Override
 	public Item getEmptyItem(ItemStack itemStack) {
-		return Baubles.UnChargedNanoRing;
+		return Baubles.unChargedNanoRing;
 	}
 
 	@Override
