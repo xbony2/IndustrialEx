@@ -48,10 +48,11 @@ dependencies {
     compile codeChickenLibVersion
 	compile buildcraftVersion
 	compile wailaVersion
-	compile file(baubleVersion)
-	compile file(floatingRailsVersion)
-	compile file(cofhCoreVersion)
-	compile file(tFoundationVersion)
+	compile files(baubleVersion)
+	compile files(floatingRailsVersion)
+	compile files(cofhCoreVersion)
+	compile files(tFoundationVersion)
+	compile files(naturaVersion)
 }
 
 
