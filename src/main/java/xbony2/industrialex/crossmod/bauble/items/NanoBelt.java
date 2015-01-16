@@ -74,7 +74,7 @@ public class NanoBelt extends Item implements IElectricItemBony, IBauble{
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
 		if(ElectricItem.manager.canUse(itemstack, 10)){
-			player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 100, 0));
+			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 100, 0));
 			ElectricItem.manager.discharge(itemstack, 10, 3, false, false, false);
 		}
 	}
