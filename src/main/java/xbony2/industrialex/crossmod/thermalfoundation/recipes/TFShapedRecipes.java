@@ -13,12 +13,12 @@ public class TFShapedRecipes {
 	 */
 	public static void addRecipes(){
 		if(IEConfig.ferrousDusts) GameRegistry.addRecipe(new ShapedOreRecipe((TFItems.dustNickel), new Object[]{
-			ShapedRecipes.BLOCK, 'x', "dustTinyNickel"}));
+			ShapedRecipes.BLOCK, 'X', "dustTinyNickel"}));
 		
 		if(IEConfig.shinyDusts) GameRegistry.addRecipe(new ShapedOreRecipe((TFItems.dustPlatinum), new Object[]{
-				ShapedRecipes.BLOCK, 'x', "dustTinyPlatinum"}));
+				ShapedRecipes.BLOCK, 'X', "dustTinyPlatinum"}));
 		
 		if(IEConfig.manaDusts) GameRegistry.addRecipe(new ShapedOreRecipe((TFItems.dustMithril), new Object[]{
-				ShapedRecipes.BLOCK, 'x', "dustTinyMithril"}));
+				ShapedRecipes.BLOCK, 'X', "dustTinyMithril"}));
 	}
 }

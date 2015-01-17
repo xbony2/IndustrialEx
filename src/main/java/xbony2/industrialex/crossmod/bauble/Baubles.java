@@ -14,6 +14,12 @@ public class Baubles {
 	public static Item unChargedNanoBelt;
 	public static Item chargedNanoAmulet;
 	public static Item unChargedNanoAmulet;
+	public static Item chargedQuantumRing;
+	public static Item unChargedQuantumRing;
+	public static Item chargedQuantumBelt;
+	public static Item unChargedQuantumBelt;
+	public static Item chargedQuantumAmulet;
+	public static Item unChargedQuantumAmulet;
 	
 	public static void init(){
 		chargedNanoRing = new NanoRing("nanoringc", true);
@@ -22,6 +28,8 @@ public class Baubles {
 		unChargedNanoBelt = new NanoBelt("nanobeltu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
 		chargedNanoAmulet = new NanoAmulet("nanoamuletc", true);
 		unChargedNanoAmulet = new NanoAmulet("nanoamuletu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		chargedQuantumAmulet = new QuantumAmulet("quantumamuletc", true);
+		unChargedQuantumAmulet = new QuantumAmulet("quantumamuletu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
 		
 		GameRegistry.registerItem(chargedNanoRing, "ChargedNanoRing");
 		GameRegistry.registerItem(unChargedNanoRing, "UnChargedNanoRing");
@@ -29,6 +37,8 @@ public class Baubles {
 		GameRegistry.registerItem(unChargedNanoBelt, "UnChargedNanoBelt");
 		GameRegistry.registerItem(chargedNanoAmulet, "ChargedNanoAmulet");
 		GameRegistry.registerItem(unChargedNanoAmulet, "UnChargedNanoAmulet");
+		GameRegistry.registerItem(chargedQuantumAmulet, "ChargedQuantumAmulet");
+		GameRegistry.registerItem(unChargedQuantumAmulet, "UnChargedQuantumAmulet");
 		
 		BaubleShapedRecipes.addRecipes();
 	}

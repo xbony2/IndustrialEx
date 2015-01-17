@@ -61,7 +61,7 @@ public class LazyOreAdd {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(nugget.getItem(), 9, nugget.getItemDamage()), new Object[]{
 			gemOrIngot}));
 		GameRegistry.addRecipe(new ShapedOreRecipe((compactblock), new Object[]{
-				BLOCK, 'x', gemOrIngot}));
+				BLOCK, 'X', gemOrIngot}));
 		
 		GameRegistry.addSmelting(pureDust, gemOrIngot, 1.0F);
 		GameRegistry.addSmelting(crushedOre, gemOrIngot, 1.0F);

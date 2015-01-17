@@ -63,7 +63,7 @@ public class NanoAmulet extends Item implements IElectricItemBony, IBauble{
 
 	@Override
 	public double getTransferLimit(ItemStack itemStack) {
-		return 2048;
+		return 512;
 	}
 
 	@Override

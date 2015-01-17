@@ -1,10 +1,10 @@
 package xbony2.industrialex.crossmod.bauble.items;
 
-import ic2.api.item.ElectricItem;
-import ic2.api.item.IElectricItem;
-
 import java.util.List;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import ic2.api.item.ElectricItem;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,18 +16,16 @@ import xbony2.industrialex.api.electric.IElectricItemBony;
 import xbony2.industrialex.crossmod.bauble.Baubles;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
-public class NanoRing extends Item implements IElectricItemBony, IBauble{
-	public NanoRing(String unlocalized, boolean charged){
+public class QuantumAmulet extends Item implements IElectricItemBony, IBauble{
+	public QuantumAmulet(String unlocalized, boolean charged){
 		super();
 		
 		this.setUnlocalizedName(unlocalized);
 		this.setMaxStackSize(1);
-		this.setMaxDamage(this.MAX_ENERGY_NANO + 1);
+		this.setMaxDamage(this.MAX_ENERGY_QUANTUM + 1);
 		if(!charged){
-			this.setDamage(new ItemStack(Baubles.unChargedNanoRing), 1);
+			this.setDamage(new ItemStack(Baubles.unChargedQuantumAmulet), 1);
 		}
 	}
 	
@@ -38,62 +36,62 @@ public class NanoRing extends Item implements IElectricItemBony, IBauble{
 	}
 
 	@Override
-	public boolean canProvideEnergy(ItemStack itemStack){
+	public boolean canProvideEnergy(ItemStack itemStack) {
 		return false;
 	}
 
 	@Override
 	public Item getChargedItem(ItemStack itemStack) {
-		return Baubles.chargedNanoRing;
+		return Baubles.chargedQuantumAmulet;
 	}
 
 	@Override
 	public Item getEmptyItem(ItemStack itemStack) {
-		return Baubles.unChargedNanoRing;
+		return Baubles.unChargedQuantumAmulet;
 	}
 
 	@Override
 	public double getMaxCharge(ItemStack itemStack) {
-		return this.MAX_ENERGY_NANO;
+		return this.MAX_ENERGY_QUANTUM;
 	}
 
 	@Override
 	public int getTier(ItemStack itemStack) {
-		return 3;
+		return 4;
 	}
 
 	@Override
 	public double getTransferLimit(ItemStack itemStack) {
-		return 512;
+		return 2048;
+	}
+
+	@Override
+	public boolean canEquip(ItemStack itemstack, EntityLivingBase player) {
+		return true;
+	}
+
+	@Override
+	public boolean canUnequip(ItemStack itemstack, EntityLivingBase player) {
+		return true;
 	}
 
 	@Override
 	public BaubleType getBaubleType(ItemStack itemstack) {
-		return BaubleType.RING;
+		return BaubleType.AMULET;
 	}
+
+	@Override
+	public void onEquipped(ItemStack arg0, EntityLivingBase arg1) {}
+
+	@Override
+	public void onUnequipped(ItemStack arg0, EntityLivingBase arg1) {}
 
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
 		if(ElectricItem.manager.canUse(itemstack, 10)){
-			player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 100, 0));
+			player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 100, 1));
 			ElectricItem.manager.discharge(itemstack, 10, 3, false, false, false);
-		}
-	}
-
-	@Override
-	public void onEquipped(ItemStack itemstack, EntityLivingBase player){}
-
-	@Override
-	public void onUnequipped(ItemStack itemstack, EntityLivingBase player){}
-
-	@Override
-	public boolean canEquip(ItemStack itemstack, EntityLivingBase player){
-		return true;
-	}
-
-	@Override
-	public boolean canUnequip(ItemStack itemstack, EntityLivingBase player){
-		return true;
+		}	
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -105,4 +103,5 @@ public class NanoRing extends Item implements IElectricItemBony, IBauble{
 		itemList.add(itemstack);
 		itemList.add(new ItemStack(this, 1, getMaxDamage()));
 	}
+
 }

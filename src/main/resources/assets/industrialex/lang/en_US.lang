@@ -55,6 +55,8 @@ item.crushedPurifiedInfusedGold.name=Purified Crushed Infused Gold
 item.dustNyt.name=Nyt Dust
 item.dustVice.name=Vice Dust
 item.dustInfusedGold.name=Infused Gold Dust
+item.quantumamuletu.name=Quantum Amulet
+item.quantumamuletc.name=Quantum Amulet
 
 tile.blockDarkSteel.name=Dark Steel Block
 tile.oreNyt.name=Nyt Ore
