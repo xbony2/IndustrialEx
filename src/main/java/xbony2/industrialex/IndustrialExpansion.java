@@ -32,7 +32,7 @@ public class IndustrialExpansion {
 	@Instance("industrialEx")
 	public static IndustrialExpansion instance;
 	
-	public static CreativeTabs IndustrialExTab;
+	public static CreativeTabs industrialExTab;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
@@ -40,7 +40,7 @@ public class IndustrialExpansion {
 		
 		IEConfig.init(event.getSuggestedConfigurationFile());
 		
-		IndustrialExTab = new CreativeTabs("IndustrialExTab"){
+		industrialExTab = new CreativeTabs("IndustrialExTab"){
 			@Override 
 			@SideOnly(Side.CLIENT)
 			public Item getTabIconItem() {

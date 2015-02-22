@@ -18,7 +18,7 @@ public class DarkSteelKinRotor extends ItemGradualInt implements IKineticWindRot
 		super(null, MAXDAMAGE);
 		
 		this.setUnlocalizedName("darkSteelKinRotor");
-		this.setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		this.setCreativeTab(IndustrialExpansion.industrialExTab);
 		this.setMaxDamage(MAXDAMAGE);
 		this.setMaxStackSize(1);
 		

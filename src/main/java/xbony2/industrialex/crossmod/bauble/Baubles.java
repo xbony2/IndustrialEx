@@ -23,13 +23,13 @@ public class Baubles {
 	
 	public static void init(){
 		chargedNanoRing = new NanoRing("nanoringc", true);
-		unChargedNanoRing = new NanoRing("nanoringu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		unChargedNanoRing = new NanoRing("nanoringu", false).setCreativeTab(IndustrialExpansion.industrialExTab);
 		chargedNanoBelt = new NanoBelt("nanobeltc", true);
-		unChargedNanoBelt = new NanoBelt("nanobeltu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		unChargedNanoBelt = new NanoBelt("nanobeltu", false).setCreativeTab(IndustrialExpansion.industrialExTab);
 		chargedNanoAmulet = new NanoAmulet("nanoamuletc", true);
-		unChargedNanoAmulet = new NanoAmulet("nanoamuletu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		unChargedNanoAmulet = new NanoAmulet("nanoamuletu", false).setCreativeTab(IndustrialExpansion.industrialExTab);
 		chargedQuantumAmulet = new QuantumAmulet("quantumamuletc", true);
-		unChargedQuantumAmulet = new QuantumAmulet("quantumamuletu", false).setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		unChargedQuantumAmulet = new QuantumAmulet("quantumamuletu", false).setCreativeTab(IndustrialExpansion.industrialExTab);
 		
 		GameRegistry.registerItem(chargedNanoRing, "ChargedNanoRing");
 		GameRegistry.registerItem(unChargedNanoRing, "UnChargedNanoRing");

@@ -13,7 +13,7 @@ public class IEItem extends Item{
 		super();
 		
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		this.setCreativeTab(IndustrialExpansion.industrialExTab);
 		GameRegistry.registerItem(this, unlocalizedName);
 		OreDictionary.registerOre(unlocalizedName, this);
 	}

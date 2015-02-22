@@ -15,7 +15,7 @@ public class IEBaseBlock extends Block{
 		super(material);
 		
 		this.setBlockName(unlocalizedName);
-		this.setCreativeTab(IndustrialExpansion.IndustrialExTab);
+		this.setCreativeTab(IndustrialExpansion.industrialExTab);
 		this.setStepSound(soundTypePiston);
 		this.setHardness(3.0F);
 		this.setResistance(10.0F);
