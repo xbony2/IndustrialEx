@@ -22,37 +22,58 @@ group= "com.xbony2.industrialEx"
 archivesBaseName = "industrialEx"
 minecraft {
     version = forgeVersion
-    assetDir = "eclipse/assets"
+    runDir = "eclipse"
 	replace "@VERSION@", project.version
 }
 
 repositories {
 	maven {
 		name = "ic2"
-		url = "http://maven.ic2.player.to/"
+		url = 'http://maven.ic2.player.to/'
 	}
 	maven { 
         name = "chickenbones" 
-        url = "http://chickenbones.net/maven/" 
+        url = 'http://chickenbones.net/maven/'
 	}
 	maven {
 		name "ProfMobius"
-		url "http://mobiusstrip.eu/maven"
+		url 'http://mobiusstrip.eu/maven'
+	}
+	maven {
+		name "progwml6"
+		url 'http://dvs1.progwml6.com/files/maven'
+	}
+	ivy {
+		name "CoFHCore"
+		artifactPattern 'http://addons.cursecdn.com/files/2221/835/[module]-[revision].[ext]'
+	}
+	ivy {
+		name "ThermalExpansion"
+		artifactPattern "http://addons.cursecdn.com/files/2221/850/[module]-[revision].[ext]"
+	}
+	ivy {
+		name "ThermalFoundation"
+		artifactPattern "http://addons.cursecdn.com/files/2221/831/[module]-[revision].[ext]"
 	}
 }
 
 dependencies {
-    compile ic2Version
-    compile codeChickenCoreVersion 
-    compile notEnoughItemsVersion 
-    compile codeChickenLibVersion
+	compile group: 'cofh', name: 'CoFHCore', version: cofhCoreVersion, ext: 'jar' //needs to be fixed
+	compile group: 'cofh', name: 'ThermalExpansion', version: teVersion, ext: 'jar'
+	compile group: 'cofh', name: 'ThermalFoundation', version: tFoundationVersion, ext: 'jar'
+	
+	compile ic2Version
+	compile codeChickenCoreVersion 
+	compile notEnoughItemsVersion 
+	compile codeChickenLibVersion
 	compile buildcraftVersion
 	compile wailaVersion
+	compile mantleVersion
+	compile ticVersion
+	compile naturaVersion //needs to be fixed
+	
 	compile files(baubleVersion)
 	compile files(floatingRailsVersion)
-	compile files(cofhCoreVersion)
-	compile files(tFoundationVersion)
-	compile files(naturaVersion)
 }
 
 
