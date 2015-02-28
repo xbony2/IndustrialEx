@@ -10,7 +10,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class DarkSteelKinRotor extends Item implements IKineticWindRotor{
-	public static final int DURABILITY = 11;
 	public static final int MAX_DAMAGE = 604800;
 	
 	public DarkSteelKinRotor(){
