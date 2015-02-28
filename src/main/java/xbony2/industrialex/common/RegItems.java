@@ -13,7 +13,7 @@ public class RegItems {
 	public static Item darkSteelPlate;
 	public static Item darkSteelDensePlate;
 	public static Item darkSteelRotorBlade;
-	//public static Item darkSteelKinRotor;
+	public static Item darkSteelKinRotor;
 	public static Item darkSteelShaft;
 	public static Item darkMixedMetalIngot;
 	public static Item greenDye;
@@ -59,7 +59,7 @@ public class RegItems {
 		darkSteelPlate = new IEItem("plateDarkSteel");
 		darkSteelDensePlate = new IEItem("plateDenseDarkSteel");
 		darkSteelRotorBlade = new IEItem("rotorBladeDarkSteel");
-		//darkSteelKinRotor = new DarkSteelKinRotor();
+		darkSteelKinRotor = new DarkSteelKinRotor();
 		darkSteelShaft = new IEItem("shaftDarkSteel");
 		darkMixedMetalIngot = new IEItem("XBONY2_mixedMetalIngotDarkSteel");
 		greenDye = new IEItem("dyeGreen");
@@ -91,7 +91,5 @@ public class RegItems {
 		viceDust = new IEItem("dustVice");
 		infusedGoldDust = new IEItem("dustInfusedGold");
 		weed = new IEItem("XBONY2_weed");
-		
-		//GameRegistry.registerItem(darkSteelKinRotor, "darkSteelKinRotor");
 	}
 }

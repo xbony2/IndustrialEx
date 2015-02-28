@@ -1,27 +1,27 @@
 package xbony2.industrialex.items;
 
 import ic2.api.item.IKineticWindRotor;
-import ic2.core.init.InternalName;
-import ic2.core.item.ItemGradualInt;
-import xbony2.industrialex.IndustrialExpansion;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import xbony2.industrialex.IndustrialExpansion;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
-public class DarkSteelKinRotor extends ItemGradualInt implements IKineticWindRotor{
+public class DarkSteelKinRotor extends Item implements IKineticWindRotor{
 	public static final int DURABILITY = 11;
-	public static final int MAXDAMAGE = 604800;
+	public static final int MAX_DAMAGE = 604800;
 	
 	public DarkSteelKinRotor(){
-		super(null, MAXDAMAGE);
+		super();
 		
 		this.setUnlocalizedName("darkSteelKinRotor");
 		this.setCreativeTab(IndustrialExpansion.industrialExTab);
-		this.setMaxDamage(MAXDAMAGE);
+		this.setMaxDamage(MAX_DAMAGE);
 		this.setMaxStackSize(1);
 		
+		GameRegistry.registerItem(this, "darkSteelKinRotor");
 	}
 	
 	@Override

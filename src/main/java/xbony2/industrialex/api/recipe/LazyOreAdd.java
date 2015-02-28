@@ -11,14 +11,22 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class LazyOreAdd {
 	private static final String[] BLOCK = new String[]{"XXX", "XXX", "XXX"};
 	
+	private static NBTTagCompound orewash;
+	private static NBTTagCompound centerf;
+	
+	static {
+		orewash = new NBTTagCompound();
+		orewash.setInteger("amount", 1000);
+		
+		centerf = new NBTTagCompound();
+		centerf.setInteger("minHeat", 1500);
+	}
+	
+	private LazyOreAdd(){}
+	
 	public static void addOreRecipes(ItemStack ore, ItemStack compactblock, ItemStack gemOrIngot, ItemStack nugget, 
 			ItemStack itemCasing, ItemStack plate, ItemStack densePlate, ItemStack crushedOre, ItemStack purifiedCrushedOre, 
 			ItemStack tinyDust, ItemStack couldBeOutputtedTinyDust, ItemStack pureDust){
-		
-		NBTTagCompound orewash = new NBTTagCompound();
-	    orewash.setInteger("amount", 1000);
-	    NBTTagCompound centerf = new NBTTagCompound();
-	    centerf.setInteger("minHeat", 1500);
 	    
 	    IC2RecipeInput input1 = new IC2RecipeInput(ore);
 	    Recipes.macerator.addRecipe(input1, null, new ItemStack(crushedOre.getItem(), 2, crushedOre.getItemDamage()));

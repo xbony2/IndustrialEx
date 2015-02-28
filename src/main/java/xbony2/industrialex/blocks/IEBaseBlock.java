@@ -21,7 +21,7 @@ public class IEBaseBlock extends Block{
 		this.setResistance(10.0F);
 		
 		GameRegistry.registerBlock(this, unlocalizedName);
-		OreDictionary.registerOre(unlocalizedName, this);
+		OreDictionary.registerOre(unlocalizedName.replace("_", ":"), this);
 	}
 
 	@Override

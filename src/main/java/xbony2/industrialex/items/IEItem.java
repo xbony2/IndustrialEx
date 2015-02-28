@@ -15,7 +15,7 @@ public class IEItem extends Item{
 		this.setUnlocalizedName(unlocalizedName);
 		this.setCreativeTab(IndustrialExpansion.industrialExTab);
 		GameRegistry.registerItem(this, unlocalizedName);
-		OreDictionary.registerOre(unlocalizedName, this);
+		OreDictionary.registerOre(unlocalizedName.replace("_", ":"), this);
 	}
 	
 	@Override
