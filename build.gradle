@@ -58,7 +58,7 @@ repositories {
 }
 
 dependencies {
-	compile group: 'cofh', name: 'CoFHCore', version: cofhCoreVersion, ext: 'jar' //needs to be fixed
+	compile group: 'cofh', name: 'CoFHCore', version: cofhCoreVersion, ext: 'jar'
 	compile group: 'cofh', name: 'ThermalExpansion', version: teVersion, ext: 'jar'
 	compile group: 'cofh', name: 'ThermalFoundation', version: tFoundationVersion, ext: 'jar'
 	
@@ -70,7 +70,7 @@ dependencies {
 	compile wailaVersion
 	compile mantleVersion
 	compile ticVersion
-	compile naturaVersion //needs to be fixed
+	compile naturaVersion
 	
 	compile files(baubleVersion)
 	compile files(floatingRailsVersion)
