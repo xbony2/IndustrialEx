@@ -42,6 +42,8 @@ public class CrossMod {
 		frails = Loader.isModLoaded("floatingrails") && IEConfig.frailsCrossmod;
 		te = Loader.isModLoaded("ThermalExpansion") && IEConfig.teCrossmod;
 		tf = Loader.isModLoaded("ThermalFoundation") && IEConfig.tfCrossmod;
+		
+		if(natura) Natura.preInit();
 	}
 	
 	public static void init(){
