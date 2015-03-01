@@ -1,15 +1,17 @@
 package xbony2.industrialex.crossmod.natura;
 
-import net.minecraft.item.ItemStack;
-import mods.natura.common.NContent;
+import xbony2.industrialex.crops.CropIDs;
+import xbony2.industrialex.crossmod.natura.crops.CropGreenGlowshroom;
 import ic2.api.crops.CropCard;
 import ic2.api.crops.Crops;
+import mods.natura.common.NContent;
+import net.minecraft.item.ItemStack;
 
 public class CropHandler {
-	public static CropCard cropGreenGlowshroom;
+	public static CropCard cropGreenGlowshroom = new CropGreenGlowshroom();
 	
 	public static void registerCrops(){
-		
+		Crops.instance.registerCrop(cropGreenGlowshroom, CropIDs.ID_GREEN_GLOWSHROOM);
 	}
 	
 	public static void registerSeeds(){

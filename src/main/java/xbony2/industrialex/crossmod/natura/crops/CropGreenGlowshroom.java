@@ -52,5 +52,9 @@ public class CropGreenGlowshroom extends CropCard {
 		if (crop.getSize() == 3) return new ItemStack(NContent.glowshroomGreen);
 		return null;
 	}
+	
+	public String discoveredBy(){
+		return "xbony2";
+	}
 
 }
