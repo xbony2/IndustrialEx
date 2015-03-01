@@ -1,6 +1,6 @@
 package xbony2.industrialex.crossmod.natura;
 
-import xbony2.industrialex.crops.CropIDs;
+import xbony2.industrialex.api.BonyDebugger;
 import xbony2.industrialex.crossmod.natura.crops.CropGreenGlowshroom;
 import ic2.api.crops.CropCard;
 import ic2.api.crops.Crops;
@@ -11,10 +11,11 @@ public class CropHandler {
 	public static CropCard cropGreenGlowshroom = new CropGreenGlowshroom();
 	
 	public static void registerCrops(){
-		Crops.instance.registerCrop(cropGreenGlowshroom, CropIDs.ID_GREEN_GLOWSHROOM);
+		Crops.instance.registerCrop(cropGreenGlowshroom);
 	}
 	
 	public static void registerSeeds(){
-		Crops.instance.registerBaseSeed(new ItemStack(NContent.glowshroomGreen), cropGreenGlowshroom.getId(), 1, 1, 1, 1);
+		if(!Crops.instance.registerBaseSeed(new ItemStack(NContent.glowshroomGreen, 4), cropGreenGlowshroom.getId(), 1, 1, 1, 1))
+			BonyDebugger.debug();
 	}
 }

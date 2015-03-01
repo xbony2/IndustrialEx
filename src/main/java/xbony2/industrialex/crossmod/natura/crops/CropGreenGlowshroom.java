@@ -1,7 +1,11 @@
 package xbony2.industrialex.crossmod.natura.crops;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import mods.natura.common.NContent;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
 import ic2.api.crops.CropCard;
 import ic2.api.crops.ICropTile;
 
@@ -19,7 +23,14 @@ public class CropGreenGlowshroom extends CropCard {
 
 	@Override
 	public int stat(int n) { //TODO: figure out what the index is for.
-		return 1;
+		switch (n) {
+		case 0: return 0;
+		case 1: return 4;
+		case 2: return 0;
+		case 3: return 0;
+		case 4: return 4;
+		}
+		return 0;
 	}
 
 	@Override
@@ -56,5 +67,18 @@ public class CropGreenGlowshroom extends CropCard {
 	public String discoveredBy(){
 		return "xbony2";
 	}
+	
+	@SideOnly(Side.CLIENT)
+	public void registerSprites(IIconRegister iconRegister) {
+		textures = new IIcon[maxSize()];
 
+		for (int i = 1; i <= textures.length; i++) {
+			textures[i-1] = iconRegister.registerIcon("industrialex:crop/crop." + name() + i);
+		}
+	}
+	
+	@Override
+	public int getEmittedLight(ICropTile crop) {
+		return 8;
+	}
 }

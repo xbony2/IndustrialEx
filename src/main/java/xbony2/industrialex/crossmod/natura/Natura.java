@@ -6,5 +6,7 @@ public class Natura {
 
 	public static void init(){
 		NaturaIC2Recipes.addRecipes();
+		CropHandler.registerCrops();
+		CropHandler.registerSeeds();
 	}
 }
