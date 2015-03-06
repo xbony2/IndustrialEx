@@ -15,12 +15,22 @@ public class IEConfig {
 	public static boolean ferrousDusts;
 	public static boolean shinyDusts;
 	public static boolean manaDusts;
+	public static boolean generateNyt;
+	public static boolean generateVice;
+	public static boolean generateInfusedGold;
+	public static boolean isHardcoreMaceratorOn;
 	
 	public static void init(File file){
 		Configuration config = new Configuration(file);
 		
 		config.load();
 		{
+			generateNyt = config.getBoolean("Generates Nyt", "World", true, "Enables/disabled the generation of Nyt Ore in the Nether");
+			generateVice = config.getBoolean("Generates Vice", "World", true, "Enables/disabled the generation of Vice Ore in the Nether");
+			generateInfusedGold = config.getBoolean("Generates Infused Gold", "World", true, "Enables/disabled the generation of Infused Gold Ore in the Nether");
+			
+			isHardcoreMaceratorOn = config.getBoolean("Hardcorizes the macerator", "Hacks", false, "Makes the IC2 Macerator require diamonds to craft");
+			
 			baublesCrossmod = config.getBoolean("Baubles Crossmod", "Crossmod", true, "Enables/disables integration for the Baubles mod by Azanor");
 			naturaCrossmod = config.getBoolean("Natura Crossmod", "Crossmod", true, "Enables/disables integration for the Natura mod by mDiyo/Prog");
 			frailsCrossmod = config.getBoolean("Floating Rails Crossmod", "Crossmod", true, "Enables/disables integration for the Floating Rails mod by Ewy");

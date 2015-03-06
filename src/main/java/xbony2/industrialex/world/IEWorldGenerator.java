@@ -1,5 +1,7 @@
 package xbony2.industrialex.world;
 
+import xbony2.industrialex.common.IEConfig;
+
 import java.util.Random;
 
 import xbony2.industrialex.common.RegBlocks;
@@ -30,13 +32,13 @@ public class IEWorldGenerator implements IWorldGenerator{
     }
 	
 	private void generateNether(World world, Random random, int x, int z){
-		this.addNetherOreSpawn(RegBlocks.nytOre, world, random, x, z, 16, 16, 16, 4, 5, 120);
-		this.addNetherOreSpawn(RegBlocks.viceOre, world, random, x, z, 16, 16, 5, 7, 5, 120);
-		this.addNetherOreSpawn(RegBlocks.infusedGoldOre, world, random, x, z, 16, 16, 11, 1, 5, 120);
+		if(IEConfig.generateNyt) this.addNetherOreSpawn(RegBlocks.nytOre, world, random, x, z, 16, 16, 16, 4, 5, 120);
+		if(IEConfig.generateVice) this.addNetherOreSpawn(RegBlocks.viceOre, world, random, x, z, 16, 16, 5, 7, 5, 120);
+		if(IEConfig.generateInfusedGold) this.addNetherOreSpawn(RegBlocks.infusedGoldOre, world, random, x, z, 16, 16, 11, 1, 5, 120);
     }
 
 	private void generateEnd(World world, Random random, int x, int z){
-
+		
     }
 	
 	public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY){
