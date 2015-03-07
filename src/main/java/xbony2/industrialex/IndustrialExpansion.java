@@ -1,5 +1,7 @@
 package xbony2.industrialex;
 
+import xbony2.industrialex.common.Hacks;
+
 import ic2.api.item.IC2Items;
 import xbony2.industrialex.api.util.IELog;
 import xbony2.industrialex.common.IEConfig;
@@ -78,5 +80,7 @@ public class IndustrialExpansion {
 		IELog.log("We are in postinit!");
 		
 		CrossMod.postInit();
+		
+		Hacks.doHacks();
 	}
 }
