@@ -57,6 +57,10 @@ item.dustVice.name=Vice Dust
 item.dustInfusedGold.name=Infused Gold Dust
 item.quantumamuletu.name=Quantum Amulet
 item.quantumamuletc.name=Quantum Amulet
+item.quantumringc.name=Quantum Ring
+item.quantumringu.name=Quantum Ring
+item.quantumbeltu.name=Quantum Belt
+item.quantumbeltc.name=Quantum Belt
 
 tile.blockDarkSteel.name=Dark Steel Block
 tile.oreNyt.name=Nyt Ore

@@ -29,5 +29,15 @@ public class BaubleShapedRecipes {
 			" S ",
 			"S S",
 			"QCQ", 'Q', IC2Items.getItem("iridiumPlate"),'C', IC2Items.getItem("lapotronCrystal"), 'S', Items.string}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.unChargedQuantumRing), new Object[]{
+			" Q ",
+			"Q Q",
+			" C ", 'Q', IC2Items.getItem("iridiumPlate"), 'C', IC2Items.getItem("lapotronCrystal")}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Baubles.unChargedQuantumBelt), new Object[]{
+			" Q ",
+			"QCQ",
+			" Q ", 'Q', IC2Items.getItem("iridiumPlate"), 'C', IC2Items.getItem("lapotronCrystal")}));
 	}
 }
