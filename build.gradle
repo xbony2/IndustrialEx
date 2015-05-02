@@ -43,25 +43,9 @@ repositories {
 		name "progwml6"
 		url 'http://dvs1.progwml6.com/files/maven'
 	}
-	ivy {
-		name "CoFHCore"
-		artifactPattern 'http://addons.cursecdn.com/files/2221/835/[module]-[revision].[ext]'
-	}
-	ivy {
-		name "ThermalExpansion"
-		artifactPattern "http://addons.cursecdn.com/files/2221/850/[module]-[revision].[ext]"
-	}
-	ivy {
-		name "ThermalFoundation"
-		artifactPattern "http://addons.cursecdn.com/files/2221/831/[module]-[revision].[ext]"
-	}
 }
 
 dependencies {
-	compile group: 'cofh', name: 'CoFHCore', version: cofhCoreVersion, ext: 'jar'
-	compile group: 'cofh', name: 'ThermalExpansion', version: teVersion, ext: 'jar'
-	compile group: 'cofh', name: 'ThermalFoundation', version: tFoundationVersion, ext: 'jar'
-	
 	compile ic2Version
 	compile codeChickenCoreVersion 
 	compile notEnoughItemsVersion 
@@ -74,11 +58,13 @@ dependencies {
 	
 	compile files(baubleVersion)
 	compile files(floatingRailsVersion)
+	compile files(cofhCoreVersion)
+	compile files(tFoundationVersion)
+	compile files(teVersion)
 }
 
 
-processResources
-{
+processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
