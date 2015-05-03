@@ -3,6 +3,11 @@ package xbony2.industrialex.api.recipe;
 import ic2.api.item.IC2Items;
 import net.minecraft.item.ItemStack;
 
+/**
+ * Contains useful contstants for tined cans.
+ * 
+ * @author xbony2
+ */
 public class CannerUtil {
 	public final static IC2RecipeInput EMPTY_X1 = new IC2RecipeInput(IC2Items.getItem("tinCan"));
 	public final static IC2RecipeInput EMPTY_X3 = new IC2RecipeInput(new ItemStack(IC2Items.getItem("tinCan").getItem(), 3));

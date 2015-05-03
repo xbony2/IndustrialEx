@@ -62,14 +62,10 @@ public class LazyOreAdd {
 		IC2RecipeInput input8 = new IC2RecipeInput(plate);
 		Recipes.macerator.addRecipe(input8, null, new ItemStack(tinyDust.getItem(), 8));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe((pureDust), new Object[]{
-				BLOCK, 'X', tinyDust}));
-		GameRegistry.addRecipe(new ShapedOreRecipe((gemOrIngot), new Object[]{
-				BLOCK, 'X', nugget}));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(nugget.getItem(), 9, nugget.getItemDamage()), new Object[]{
-			gemOrIngot}));
-		GameRegistry.addRecipe(new ShapedOreRecipe((compactblock), new Object[]{
-				BLOCK, 'X', gemOrIngot}));
+		GameRegistry.addRecipe(new ShapedOreRecipe((pureDust), new Object[]{ BLOCK, 'X', tinyDust}));
+		GameRegistry.addRecipe(new ShapedOreRecipe((gemOrIngot), new Object[]{ BLOCK, 'X', nugget}));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(nugget.getItem(), 9, nugget.getItemDamage()), new Object[]{ gemOrIngot}));
+		GameRegistry.addRecipe(new ShapedOreRecipe((compactblock), new Object[]{ BLOCK, 'X', gemOrIngot}));
 		
 		GameRegistry.addSmelting(pureDust, gemOrIngot, 1.0F);
 		GameRegistry.addSmelting(crushedOre, gemOrIngot, 1.0F);
