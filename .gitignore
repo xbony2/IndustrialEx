@@ -15,11 +15,8 @@ hs_err_pid*
 .DS_Store
 
 #Other mods
-src/main/java/mantle/
-src/main/java/mods/
-src/main/java/com/
-src/main/resources/assets/natura
-src/main/resources/assets/floatingrails
+!lib/*
+lib/.DS_Store
 
 #gradle
 !gradle/wrapper/gradle-wrapper.jar
